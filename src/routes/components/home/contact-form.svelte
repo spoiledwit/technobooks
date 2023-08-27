@@ -19,12 +19,12 @@
     className}
 >
   <h2
-    class=" w-full md:w-2/3 xl:w-2/5 text-5xl font-bold text-center text-zinc-700 dark:text-white tracking-tight"
+    class=" w-full md:w-2/3 xl:w-2/5 text-5xl text-center text-zinc-700 tracking-tight"
   >
     Get In Touch With Us!
   </h2>
 
-  <div class=" flex w-full gap-12">
+  <div class=" flex flex-col md:flex-row w-full gap-12">
     <div class="w-full gap-4 flex flex-col">
       <h3 class=" text-gray-700 text-xl font-bold tracking-tight">
         Contact Us
