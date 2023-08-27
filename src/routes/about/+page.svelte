@@ -3,7 +3,7 @@
 >
   <h2
     id="our-view"
-    class=" text-5xl font-thin mb-4 text-center md:text-start text-gray-900"
+    class=" text-5xl font-normal mb-4 text-center md:text-start text-gray-900"
   >
     Our View
   </h2>
@@ -19,7 +19,7 @@
   </p>
   <h2
     id="what-we-do"
-    class=" text-5xl font-thin mb-4 mt-8 text-center md:text-start text-gray-900"
+    class=" text-5xl font-normal mb-4 mt-8 text-center md:text-start text-gray-900"
   >
     What We Do
   </h2>
