@@ -1,10 +1,10 @@
 <script>
   import Card from "../card.svelte";
 
-  import amazon from "../../../assets/img/amazon.png";
-  import vercel from "../../../assets/img/vercel.png";
-  import google from "../../../assets/img/google.png";
-  import meta from "../../../assets/img/meta.png";
+  import amazon from "../../../assets/img/amazon.webp";
+  import vercel from "../../../assets/img/vercel.webp";
+  import google from "../../../assets/img/google.webp";
+  import meta from "../../../assets/img/meta.webp";
   import CTA from "../cta.svelte";
   import StatsRow from "../stats-row.svelte";
   import CurrencyRow from "../currency-row.svelte";
@@ -20,7 +20,7 @@
   import FaPhoenixFramework from "svelte-icons/fa/FaPhoenixFramework.svelte";
 
   import chart from "../../../assets/chart.svg";
-  import hero from "../../../assets/img/hero.png";
+  import hero from "../../../assets/img/hero.webp";
 </script>
 
 <div

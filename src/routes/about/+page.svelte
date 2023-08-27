@@ -1,5 +1,5 @@
 <article
-  class=" flex flex-col prose text-justify text-gray-700 gap-4 mt-10 mb-20 w-full px-4 md:px-28 lg:px-60 xl:px-96"
+  class=" min-w-full flex flex-col prose text-justify text-gray-700 gap-4 mt-10 mb-20 px-4 md:px-28 lg:px-60 xl:px-96"
 >
   <h2
     id="our-view"
