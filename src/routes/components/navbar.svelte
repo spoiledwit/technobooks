@@ -18,15 +18,14 @@
     className=" py-2 w-full md:w-min md:mx-0 fixed top-4 left-1/2 z-[9999] -translate-x-1/2 px-8"
   >
     <ul class=" flex w-full md:w-min justify-between md:gap-12 text-gray-900">
-      <li class=" hover:text-green-500 transition-all cursor-pointer">Home</li>
       <li class=" hover:text-green-500 transition-all cursor-pointer">
-        Products
+        <a href="/">Home</a>
       </li>
       <li class=" hover:text-green-500 transition-all cursor-pointer">
-        Pricing
+        <a href="/about">About</a>
       </li>
       <li class=" hover:text-green-500 transition-all cursor-pointer">
-        Contact
+        <a href="/privacy-policy">Privacy</a>
       </li>
     </ul>
   </Card>

@@ -4,11 +4,13 @@
   import Services from "./components/home/services.svelte";
 
   import beams from "../assets/img/1-beams.webp";
+  import Support from "./components/home/support.svelte";
 </script>
 
 <div class=" flex flex-col gap-24 md:gap-32">
   <Hero />
   <Services />
+  <Support />
 
   <div
     class=" h-max relative overflow-hidden"

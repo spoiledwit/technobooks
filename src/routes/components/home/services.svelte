@@ -6,8 +6,6 @@
   import MdLockOutline from "svelte-icons/md/MdLockOutline.svelte";
   import MdGTranslate from "svelte-icons/md/MdGTranslate.svelte";
 
-  let selectIndex = 0;
-
   const services = [
     {
       id: 1,
@@ -71,13 +69,12 @@
   <h2 class=" text-5xl text-gray-900 text-center">Services We Provide</h2>
 
   <div
-    class=" gap-12 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center"
+    class=" gap-12 w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center"
   >
     {#each services as s, i (s.id)}
       <div
         class=" rounded-xl h-full shadow-2xl shadow-black/10 bg-white flex flex-col p-4 gap-4"
       >
-        <div class=" h-full" />
         <div class=" w-20 aspect-square text-gray-700">
           <svelte:component this={getIcon(s.id)} />
         </div>
