@@ -1,0 +1,15 @@
+{
+  "bookkeeping services": [
+    "maintaining-ledgers-and-journals",
+    "accounts-payable-and-receivable-management"
+  ],
+  "financial statement preparation": ["balance-sheets"],
+  "taxation services": ["filing-vat-returns", "corporate-tax-planning"],
+  "payroll services": ["payroll-processing", "end-of-year-tax-forms"],
+  "financial analysis and reporting": [
+    "financial-ratio-analysis",
+    "customized-financial-reports"
+  ],
+
+  "auditing and assurance": ["reviewing-financial-records"]
+}

@@ -24,16 +24,17 @@
 </script>
 
 <div
-  class=" w-full md:h-[70vh] grid grid-cols-[24] grid-rows-[13] bg-grid"
+  class=" w-full pt-20 md:h-[70vh] grid grid-cols-[24] grid-rows-[13] bg-grid"
   style="mask-image: linear-gradient(to bottom, transparent, black);
   webkit-mask-image: linear-gradient(to bottom, transparent, black);
   "
 >
   <!-- background -->
   <img
+    loading="lazy"
     alt="hero background"
     src={hero}
-    class=" absolute pointer-events-none hue-rotate-[175deg] w-screen rotate-180"
+    class=" absolute scale-[2] md:scale-100 pointer-events-none hue-rotate-[175deg] w-screen rotate-90 md:rotate-180"
   />
   <div
     class=" absolute w-screen bottom-0 left-0 -translate-x-1/2 translate-y-1/3"
@@ -63,21 +64,29 @@
         class=" flex flex-wrap gap-4 md:gap-12 w-full items-center justify-center"
       >
         <img
+          loading="lazy"
           alt="sponser amazon"
           src={amazon}
           class=" w-28 h-24 grayscale invert-[0.5]"
         />
         <img
+          loading="lazy"
           alt="sponser vercel"
           src={vercel}
           class=" w-28 h-24 grayscale invert-[0.5]"
         />
         <img
+          loading="lazy"
           alt="sponser google"
           src={google}
           class=" w-28 h-24 grayscale invert-[0.5]"
         />
-        <img alt="sponser mate" src={meta} class=" w-32 h-24 grayscale" />
+        <img
+          loading="lazy"
+          alt="sponser mate"
+          src={meta}
+          class=" w-32 h-24 grayscale"
+        />
       </div>
     </div>
 
@@ -87,7 +96,7 @@
         <div class=" w-[54.6%] flex flex-col items-end gap-4">
           <Card className=" w-full h-20 flex gap-4">
             <div
-              class=" text-stone-200 w-12 aspect-square grid place-items-center rounded-md bg-red-400 p-2"
+              class=" text-stone-200 w-12 aspect-square grid place-items-center rounded-md bg-red-500 p-2"
             >
               <FaLandmark />
             </div>
@@ -98,6 +107,7 @@
           </Card>
           <Card className=" h-[187px] w-5/6 relative overflow-hidden">
             <img
+              loading="lazy"
               src={chart}
               alt="sample chart"
               class=" absolute bottom-0 -left-4 scale-x-[1.2] hue-rotate-[160deg]"

@@ -23,7 +23,7 @@
   </button>
 
   {#if open}
-    <div class="p-1" transition:slide>
+    <div class="p-1" transition:slide={{ duration: 120 }}>
       <slot name="content" />
     </div>
   {/if}

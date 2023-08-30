@@ -12,6 +12,8 @@
   import customSoftware from "../../../assets/img/custom-software.jpg";
   import devOps from "../../../assets/img/devops.jpg";
   import { toTitleCase } from "$lib/utils";
+  import { page } from "$app/stores";
+  import beam from "../../../assets/img/1-beam.png";
 
   export let data: {
     category: string;
@@ -20,24 +22,36 @@
     content: string;
   };
 
-  function getImageSource() {
+  let imageSource = blockchain;
+  function setImageSource() {
+    // console.log(data.category);
+
     switch (data.category) {
       case "bookkeeping services":
-        return bookkeeping;
+        imageSource = bookkeeping;
+        break;
       case "financial statement preparation":
-        return financialStatement;
+        imageSource = financialStatement;
+        break;
       case "taxation services":
-        return taxation;
+        imageSource = taxation;
+        break;
       case "payroll services":
-        return payroll;
+        imageSource = payroll;
+        break;
       case "financial analysis and reporting":
-        return analysis;
+        imageSource = analysis;
+        break;
       case "auditing and assurance":
-        return auditing;
+        imageSource = auditing;
+        break;
       default:
-        return blockchain;
+        imageSource = blockchain;
+        break;
     }
   }
+
+  $: $page.url.pathname, setImageSource();
 </script>
 
 <main class=" flex flex-col w-full">
@@ -45,18 +59,27 @@
   <div
     class=" relative w-full md:px-20 h-[50vh] md:h-[80vh] flex justify-center items-center"
   >
+    <div class=" w-full h-full z-10 absolute opacity-20">
+      <img
+        alt="hero beam background"
+        src={beam}
+        class=" w-full h-full object-fill hue-rotate-[30deg]"
+      />
+    </div>
+
     <div
-      class=" w-full h-full flex items-center justify-center md:rounded-3xl overflow-hidden"
+      class=" w-full z-40 h-full flex items-center justify-center md:rounded-3xl overflow-hidden"
     >
       <img
+        loading="lazy"
         alt="bookkeeping services hero"
-        src={getImageSource()}
+        src={imageSource}
         class=" h-full md:aspect-[1920/1200] bg-cover object-cover md:rounded-3xl"
       />
     </div>
 
     <div
-      class=" absolute top-0 left-0 flex items-end justify-center h-full w-full"
+      class=" absolute top-0 z-50 left-0 flex items-end justify-center h-full w-full"
     >
       <h1
         class=" text-4xl md:text-5xl mx-2 mb-12 text-center max-w-3xl text-gray-50 tracking-tight"
@@ -67,8 +90,14 @@
   </div>
 
   <section
-    class=" flex-col flex prose prose-headings:text-gray-200 prose-strong:text-gray-200 font-normal text-gray-300 px-4 md:px-28 lg:px-64 xl:px-96 min-w-full my-20"
+    class=" relative overflow-x-hidden flex-col flex prose prose-headings:text-gray-200 prose-strong:text-gray-200 font-normal text-gray-300 px-4 md:px-28 lg:px-64 xl:px-96 min-w-full mb-20"
   >
+    <div class=" overflow-hidden w-screen h-full">
+      <div
+        class=" opacity-25 rotate-[10deg] w-screen h-12 md:h-20 scale-x-150 absolute -right-8 top-2/3 bg-red-500 blur-3xl"
+      />
+    </div>
+
     <h2 class=" text-3xl md:text-center self-center tracking-tight font-normal">
       {data.tagline}
     </h2>

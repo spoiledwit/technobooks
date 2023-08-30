@@ -2,7 +2,7 @@
   export let checked: boolean = false;
 </script>
 
-<div class=" w-full flex gap-12 justify-between items-center">
+<div class=" w-full flex gap-3 md:gap-12 justify-between items-center">
   <div
     class={`${
       checked ? "text-red-300" : "text-slate-300"

@@ -1,3 +1,15 @@
+<script>
+  import beam from "../../assets/img/1-beam.png";
+</script>
+
+<div class=" w-full h-full absolute opacity-20">
+  <img
+    alt="hero beam background"
+    src={beam}
+    class=" w-full h-full object-fill hue-rotate-[30deg]"
+  />
+</div>
+
 <article
   class=" flex flex-col text-gray-300 text-justify gap-4 pt-10 pb-20 w-full px-4 md:px-28 lg:px-60 xl:px-96"
 >
