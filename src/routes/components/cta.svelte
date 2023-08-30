@@ -7,7 +7,7 @@
 <button
   {type}
   {disabled}
-  class={" rounded-md flex items-center justify-center text-white font-bold bg-green-500 hover:bg-green-600 transition-all " +
+  class={" rounded-md flex items-center justify-center text-white font-bold bg-red-500 hover:bg-red-400 transition-all " +
     className}
 >
   <slot />

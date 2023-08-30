@@ -3,7 +3,7 @@
 </script>
 
 <div
-  class={" border-2 border-slate-300 rounded-md bg-gradient-to-tr from-slate-100 from-50% to-slate-200 p-4" +
+  class={" border-2 border-zinc-800 rounded-md bg-gradient-to-tr from-zinc-900 from-50% to-zinc-800 p-4" +
     className}
 >
   <slot />

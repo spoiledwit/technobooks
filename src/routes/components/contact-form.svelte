@@ -1,10 +1,10 @@
 <script lang="ts">
-  import Input from "../input.svelte";
+  import Input from "./input.svelte";
 
-  import user from "../../../assets/user.svg";
-  import email from "../../../assets/email.svg";
-  import Textarea from "../textarea.svelte";
-  import CTA from "../cta.svelte";
+  import user from "../../assets/user.svg";
+  import email from "../../assets/email.svg";
+  import Textarea from "./textarea.svelte";
+  import CTA from "./cta.svelte";
   import { enhance } from "$app/forms";
 
   import MdPhone from "svelte-icons/md/MdPhone.svelte";
@@ -19,17 +19,17 @@
     className}
 >
   <h2
-    class=" w-full md:w-2/3 xl:w-2/5 text-5xl text-center text-zinc-700 tracking-tight"
+    class=" w-full md:w-2/3 xl:w-2/5 text-5xl text-center text-gray-300 tracking-tight"
   >
     Get In Touch With Us!
   </h2>
 
   <div class=" flex flex-col md:flex-row w-full gap-12">
     <div class="w-full gap-4 flex flex-col">
-      <h3 class=" text-gray-700 text-xl font-bold tracking-tight">
+      <h3 class=" text-gray-300 text-xl font-bold tracking-tight">
         Contact Us
       </h3>
-      <p class=" text-gray-500 text-sm">
+      <p class=" text-gray-400 text-sm">
         It is our pleasure to serve you and your company on both; short & long
         term business relationship contact. We provide IT services for new
         customer and our existed clients. And our client's satisfaction is our
@@ -38,16 +38,16 @@
       </p>
       <div class="h-full" />
       <div class=" w-full gap-4 flex items-center">
-        <div class=" w-8 text-gray-700">
+        <div class=" w-8 text-gray-300">
           <MdPhone />
         </div>
-        <p class=" text-gray-700 font-bold">+92 333 1234567</p>
+        <p class=" text-gray-300 font-bold">+92 333 1234567</p>
       </div>
       <div class=" w-full gap-4 flex items-center">
-        <div class=" w-8 text-gray-700">
+        <div class=" w-8 text-gray-300">
           <FaRegAddressCard />
         </div>
-        <p class=" text-gray-700 font-bold">Street no.1, City, State</p>
+        <p class=" text-gray-300 font-bold">Street no.1, City, State</p>
       </div>
       <div class="h-full" />
     </div>

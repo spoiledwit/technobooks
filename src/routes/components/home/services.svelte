@@ -66,25 +66,25 @@
 <div
   class=" flex flex-col gap-12 items-center w-full px-4 md:px-20 lg:px-40 xl:px-60"
 >
-  <h2 class=" text-5xl text-gray-900 text-center">Services We Provide</h2>
+  <h2 class=" text-5xl text-gray-50 text-center">Services We Provide</h2>
 
   <div
     class=" gap-12 w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center"
   >
     {#each services as s, i (s.id)}
       <div
-        class=" rounded-xl h-full shadow-2xl shadow-black/10 bg-white flex flex-col p-4 gap-4"
+        class=" rounded-xl h-full shadow-2xl shadow-black/70 bg-zinc-900 flex flex-col p-4 gap-4"
       >
-        <div class=" w-20 aspect-square text-gray-700">
+        <div class=" w-20 aspect-square text-gray-300">
           <svelte:component this={getIcon(s.id)} />
         </div>
 
         <div class=" h-full" />
 
-        <h3 class=" text-gray-700 font-bold tracking-tight text-xl">
+        <h3 class=" text-gray-300 font-bold tracking-tight text-xl">
           {s.head}
         </h3>
-        <p class=" text-gray-500 text-sm">
+        <p class=" text-gray-400 text-sm">
           {s.content}
         </p>
         <div class=" h-full" />

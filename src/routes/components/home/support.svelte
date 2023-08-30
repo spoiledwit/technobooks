@@ -3,7 +3,7 @@
 </script>
 
 <div class=" flex flex-col gap-16">
-  <h2 class=" text-5xl text-gray-900 text-center">Customer Support</h2>
+  <h2 class=" text-5xl text-gray-50 text-center">Customer Support</h2>
 
   <div
     class=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full gap-x-12 gap-y-16 px-4 md:px-28 lg:px-56 xl:px-80"

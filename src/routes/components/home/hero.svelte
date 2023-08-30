@@ -33,7 +33,7 @@
   <img
     alt="hero background"
     src={hero}
-    class=" absolute pointer-events-none hue-rotate-[300deg] w-screen rotate-180"
+    class=" absolute pointer-events-none hue-rotate-[175deg] w-screen rotate-180"
   />
   <div
     class=" absolute w-screen bottom-0 left-0 -translate-x-1/2 translate-y-1/3"
@@ -41,19 +41,19 @@
 
   <div class=" flex flex-col md:flex-row px-4 md:px-20 gap-8 md:gap-32">
     <div class=" flex flex-col gap-12 w-full h-full justify-center">
-      <h1 class=" text-7xl text-center md:text-start text-gray-900">
-        The Future of Payments <span class=" font-serif text-green-900"
+      <h1 class=" text-7xl text-center md:text-start text-gray-50">
+        The Future of Payments <span class=" font-serif text-red-200"
           >Is Here</span
         >
       </h1>
-      <p class=" text-gray-900 text-center md:text-start">
+      <p class=" text-gray-50 text-center md:text-start">
         Payments, subscriptions, taxes and analytics are all part of the
         equation when it comes to running a business in the modern world.
       </p>
 
       <div class=" flex flex-col md:flex-row items-center gap-8 w-full">
         <input
-          class=" h-12 w-96 bg-zinc-100/50 ring-0 outline-0 focus:border-green-500 rounded-md px-4 border-[1px] border-zinc-700 text-zinc-400 placeholder:text-zinc-600"
+          class=" h-12 w-96 bg-white/[0.03] ring-0 outline-0 focus:border-red-500 rounded-md px-4 border-[1px] border-gray-500 text-gray-300 placeholder:text-gray-500"
           placeholder="Enter your email..."
         />
         <CTA className="w-48 h-12">Get Started</CTA>
@@ -88,12 +88,12 @@
         <div class=" w-[54.6%] flex flex-col items-end gap-4">
           <Card className=" w-full h-20 flex gap-4">
             <div
-              class=" text-white w-12 aspect-square grid place-items-center rounded-md bg-gradient-to-tr from-teal-500 from-50% to-cyan-500 p-2"
+              class=" text-stone-200 w-12 aspect-square grid place-items-center rounded-md bg-red-400 p-2"
             >
               <FaLandmark />
             </div>
             <section class=" flex flex-col h-full justify-evenly">
-              <h4 class=" text-gray-900">Payment is submitted</h4>
+              <h4 class=" text-gray-50">Payment is submitted</h4>
               <p class=" text-gray-500 text-xs">3 hours ago</p>
             </section>
           </Card>
@@ -101,22 +101,22 @@
             <img
               src={chart}
               alt="sample chart"
-              class=" absolute bottom-0 -left-4 scale-x-[1.2] hue-rotate-[300deg]"
+              class=" absolute bottom-0 -left-4 scale-x-[1.2] hue-rotate-[160deg]"
             />
             <div
               class=" absolute w-full h-full top-0 left-0 p-4 flex flex-col gap-2"
             >
-              <h3 class=" text-gray-900 text-sm">MRP</h3>
+              <h3 class=" text-gray-50 text-sm">MRP</h3>
               <div class=" flex justify-between font-bold w-full items-center">
-                <p class=" text-lg text-gray-900">$ 3223.0</p>
-                <p class=" text-xs text-green-500">+4.6%</p>
+                <p class=" text-lg text-gray-50">$ 3223.0</p>
+                <p class=" text-xs text-red-500">+4.6%</p>
                 <div />
               </div>
             </div>
           </Card>
         </div>
         <Card className=" w-[45.4%] h-full flex flex-col gap-4">
-          <h3 class=" text-gray-900">Overview</h3>
+          <h3 class=" text-gray-50">Overview</h3>
           <StatsRow>
             <FaAlignLeft />
           </StatsRow>
@@ -133,7 +133,7 @@
       </div>
       <div class=" flex w-full gap-4">
         <Card className=" w-[45%] h-full flex flex-col gap-4">
-          <h3 class=" text-gray-900">Enable Currencies</h3>
+          <h3 class=" text-gray-50">Enable Currencies</h3>
           <CurrencyRow>
             <FaFlagUsa />
           </CurrencyRow>
@@ -150,7 +150,7 @@
         <Card className=" w-[45%] h-full flex flex-col gap-2">
           <div class=" flex w-full justify-between items-center">
             <div class=" flex flex-col w-full gap-2">
-              <h3 class=" text-gray-900">Checkout</h3>
+              <h3 class=" text-gray-50">Checkout</h3>
 
               <div class=" w-2/3 h-3 rounded-full bg-gray-300" />
             </div>
@@ -168,9 +168,7 @@
               <div class=" w-1/2 h-3 rounded-full bg-slate-300" />
             </div>
           </div>
-          <CTA
-            disabled
-            className=" mt-4 w-full h-10 disabled:hover:bg-green-500"
+          <CTA disabled className=" mt-4 w-full h-10 disabled:hover:bg-red-500"
             >Pay by Card</CTA
           >
         </Card>
