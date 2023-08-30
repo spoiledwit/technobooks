@@ -41,9 +41,9 @@
 
   <div class=" flex flex-col md:flex-row px-4 md:px-20 gap-8 md:gap-32">
     <div class=" flex flex-col gap-12 w-full h-full justify-center">
-      <h1 class=" text-7xl text-center md:text-start text-gray-50">
-        The Future of Payments <span class=" font-serif text-red-200"
-          >Is Here</span
+      <h1 class=" text-5xl md:text-7xl text-center md:text-start text-gray-50">
+        The Future of Payments <span class=" font-serif text-red-200">
+          Is Here</span
         >
       </h1>
       <p class=" text-gray-50 text-center md:text-start">
@@ -53,13 +53,12 @@
 
       <div class=" flex flex-col md:flex-row items-center gap-8 w-full">
         <input
-          class=" h-12 w-96 bg-white/[0.03] ring-0 outline-0 focus:border-red-500 rounded-md px-4 border-[1px] border-gray-500 text-gray-300 placeholder:text-gray-500"
+          class=" h-12 w-full md:w-96 bg-white/[0.03] ring-0 outline-0 focus:border-red-500 rounded-md px-4 border-[1px] border-gray-500 text-gray-300 placeholder:text-gray-500"
           placeholder="Enter your email..."
         />
         <CTA className="w-48 h-12">Get Started</CTA>
       </div>
 
-      <!-- sponsers -->
       <div
         class=" flex flex-wrap gap-4 md:gap-12 w-full items-center justify-center"
       >

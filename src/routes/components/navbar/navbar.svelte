@@ -1,11 +1,27 @@
-<script>
+<script lang="ts">
   import CTA from "../cta.svelte";
   import Card from "../card.svelte";
   import ServicesDialog from "./services-dialog.svelte";
 
   import MdKeyboardArrowDown from "svelte-icons/md/MdKeyboardArrowDown.svelte";
 
-  let isDropdownOpen = false;
+  let isDialogOpen = false;
+
+  function handleMouseEnter() {
+    if (window.screen.width > 768) {
+      isDialogOpen = true;
+    }
+  }
+  function handleMouseLeave() {
+    if (window.screen.width > 768) {
+      isDialogOpen = false;
+    }
+  }
+  function handleClick() {
+    if (window.screen.width <= 768) {
+      isDialogOpen = true;
+    }
+  }
 </script>
 
 <nav
@@ -26,24 +42,25 @@
       <li class=" hover:text-red-400 transition-all cursor-pointer">
         <a href="/">Home</a>
       </li>
-      <li
+      <!-- <li
         class=" relative"
-        on:mouseenter={() => (isDropdownOpen = true)}
-        on:mouseleave={() => (isDropdownOpen = false)}
+        on:mouseenter={handleMouseEnter}
+        on:mouseleave={handleMouseLeave}
       >
         <a
           href="/"
+          on:click={handleClick}
           class={`${
-            isDropdownOpen ? "text-red-400" : ""
+            isDialogOpen ? "text-red-400" : ""
           } flex gap-1 items-center transition-all cursor-pointer`}
         >
           <p>Services</p>
-          <div class={`${isDropdownOpen ? " rotate-180" : ""} w-3`}>
+          <div class={`${isDialogOpen ? " rotate-180" : ""} w-3`}>
             <MdKeyboardArrowDown />
-          </div></a
-        >
-        <ServicesDialog open={isDropdownOpen} />
-      </li>
+          </div>
+        </a>
+        <ServicesDialog bind:open={isDialogOpen} />
+      </li> -->
       <li class=" hover:text-red-400 transition-all cursor-pointer">
         <a href="/about">About</a>
       </li>
