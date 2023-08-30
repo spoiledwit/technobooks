@@ -5,43 +5,83 @@
   import FaBattleNet from "svelte-icons/fa/FaBattleNet.svelte";
   import MdLockOutline from "svelte-icons/md/MdLockOutline.svelte";
   import MdGTranslate from "svelte-icons/md/MdGTranslate.svelte";
+  import DiWebplatform from "svelte-icons/di/DiWebplatform.svelte";
+  import DiAndroid from "svelte-icons/di/DiAndroid.svelte";
+  import DiCodeBadge from "svelte-icons/di/DiCodeBadge.svelte";
+  import DiMarkdown from "svelte-icons/di/DiMarkdown.svelte";
 
-  const services = [
+  const technicalServices = [
+    {
+      id: 7,
+      href: "web",
+      head: "Web Design",
+      content:
+        "Our expert web design team combines creativity and functionality to create stunning websites that captivate your audience.",
+    },
+    {
+      id: 8,
+      href: "digital-marketing",
+      head: "Digital Marketing",
+      content:
+        "Our team of digital marketing experts excels in creating tailored strategies that drive targeted traffic, increase brand visibility, and generate measurable results.",
+    },
+    {
+      id: 9,
+      href: "software-development",
+      head: "Software Development",
+      content:
+        "Transform your business operations with our custom software development solutions.",
+    },
+    {
+      id: 10,
+      href: "app-development",
+      head: "App Development",
+      content:
+        "Our skilled app development team possesses a deep understanding of the latest mobile technologies and platforms.",
+    },
+  ];
+  const financialServices = [
     {
       id: 1,
-      head: "Consultancy",
+      href: "recording-financial-transactions",
+      head: "Recording Financial Transactions",
       content:
-        "Today's IT organizations face immense challenges. They must deliver game-changing cloud, big data and analytics capabilities. But they’re also expected to drive innovation and growth with declining budgets. As a result, more than ever, IT infrastructure matters become a must.Site surveying / auditing and consultation (including liaison with outsourcing) to fully identify and understand your organisation’s business and technical network objectives it is our responsibility.",
+        "Our meticulous bookkeeping ensures accurate transaction recording, organized ledgers, seamless bank reconciliations, and expert accounts management.",
     },
     {
       id: 2,
-      head: "Online Support",
+      href: "balance-sheets",
+      head: "Financial Statement",
       content:
-        "The 24/7 IT Support Center is the first point of contact for many IT applications and services . Our IT staff are available seven days a week, and are ready to help address any computer or technical concerns you have! in case of viruses problems  or if you have any problem with your operating system. connect your computer to the internet, then you can contact the team at our support center for assistance.",
+        "Crafting transparent financial insights, our services include precise balance sheets, comprehensive income statements, and insightful cash flow statements.",
     },
     {
       id: 3,
-      head: "Network Services",
+      href: "corporate-tax-planning",
+      head: "Taxation Services",
       content:
-        "The network is the backbone of every modern business.\nTECHNOBOOK's Network Services embrace everything from straightforward point-to-point connectivity to full network design. Our 'enhanced MPLS' network service meets a fundamental business need - that your network must be much more than 'just a piece of wire'.\nLocal Area Network (LAN) and Wide Area Network (WAN) product supply and installation e.g. Switch / Wi-Fi / Router / Firewall / VoIP / Application Accelerator / either centrally or locally purchased, complete with 24hr on-site maintenance service level agreements (SLA’s) including business continuity and sparing option",
+        "Navigating taxes effortlessly: from VAT returns to corporate tax planning and compliance, our experts ensure accurate reporting.",
     },
     {
       id: 4,
-      head: "Data Services",
+      href: "payroll-processing",
+      head: "Payroll Services",
       content:
-        "As you collect more and more data from the marketplace, your customers and from every part of your organization, you need the tools to store it, secure it and, most importantly, extract have a backup from it.\nWe will help you to keep your database organized, managed and saved.",
+        "Seamless payroll management: from processing to benefits administration, ensuring accurate tax forms and employee satisfaction.",
     },
     {
       id: 5,
-      head: "Security",
+      href: "financial-ratio-analysis",
+      head: "Financial Analysis & Reporting",
       content:
-        "\nToday, the security landscape has grown substantially more complex. The evolution of a highly networked, data-intensive computing model has introduced significant security risks to IT infrastructures. And, the increasing prevalence of social, mobile, virtualization and cloud technologies present a profound security challenge.\nWe will provide you with the proper solution to have a secured network and workstations from any outside/inside attack.",
+        "Expert financial insights: ratios, budgets, forecasts, tailored reports.",
     },
     {
       id: 6,
-      head: "I.T & Hospitable Training",
+      href: "external-and-internal-audits",
+      head: "Auditing & Assurance",
       content:
-        "world of cutting-edge expertise designed to empower individuals and organizations in the dynamic realm of technology. Our expert-led programs offer personalized curricula, hands-on labs, flexible learning options, and certification preparation, ensuring you stay ahead in an ever-evolving landscape. With a proven record of success, we invite you to join our community, enhance your skills, and embrace limitless opportunities for growth in the digital age. Elevate your journey with us.",
+        "Thorough auditing for financial integrity: external and internal assessments to ensure accurate records and confident decision-making.",
     },
   ];
 
@@ -59,36 +99,101 @@
         return MdLockOutline;
       case 6:
         return MdGTranslate;
+      case 7:
+        return DiWebplatform;
+      case 8:
+        return DiMarkdown;
+      case 9:
+        return DiCodeBadge;
+      case 10:
+        return DiAndroid;
     }
   }
 </script>
 
 <div
-  class=" flex flex-col gap-12 items-center w-full px-4 md:px-20 lg:px-40 xl:px-60"
+  class=" flex flex-col overflow-x-hidden gap-12 items-center w-full px-4 md:px-20 lg:px-40 xl:px-60"
 >
-  <h2 class=" text-5xl text-gray-50 text-center">Services We Provide</h2>
+  <h2 class=" text-5xl md:text-7xl font-serif text-red-200 text-center">
+    Services We Provide
+  </h2>
 
   <div
-    class=" gap-12 w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center"
+    class=" mt-20 relative gap-12 w-full grid grid-cols-1 md:grid-cols-2 items-center lg:px-20 xl:px-40"
   >
-    {#each services as s, i (s.id)}
-      <div
-        class=" rounded-xl h-full shadow-2xl shadow-black/70 bg-zinc-900 flex flex-col p-4 gap-4"
+    <div class=" w-screen h-96 -top-8 left-1/2 absolute">
+      <h3 class=" text-bg text-white/20 w-min -translate-x-1/2">Technical</h3>
+    </div>
+    {#each technicalServices as s (s.id)}
+      <a
+        href={`/services/${s.href}`}
+        class=" z-10 card bg-gradient-radial text-gray-500 from-gray-400 hover:from-red-500 to-transparent h-full p-[2px] transition-all"
       >
-        <div class=" w-20 aspect-square text-gray-300">
-          <svelte:component this={getIcon(s.id)} />
+        <div class=" rounded-xl h-full bg-zinc-900 flex flex-col p-4 gap-4">
+          <div class=" w-20 aspect-square">
+            <svelte:component this={getIcon(s.id)} />
+          </div>
+
+          <div class=" h-full" />
+
+          <h3 class=" transition-all font-bold tracking-tight text-xl">
+            {s.head}
+          </h3>
+          <p class=" text-sm transition-all">
+            {s.content}
+          </p>
+          <div class=" h-full" />
         </div>
+      </a>
+    {/each}
+  </div>
 
-        <div class=" h-full" />
+  <div
+    class=" relative mt-20 gap-12 w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center"
+  >
+    <div class=" w-screen h-96 -top-8 left-1/2 absolute">
+      <h3 class=" text-bg text-white/20 w-min -translate-x-1/2">Financial</h3>
+    </div>
+    {#each financialServices as s (s.id)}
+      <a
+        href={`/services/${s.href}`}
+        class=" card z-10 bg-gradient-radial text-gray-500 from-gray-400 hover:from-red-500 to-transparent h-full p-[2px] transition-all"
+      >
+        <div class=" rounded-xl h-full bg-zinc-900 flex flex-col p-4 gap-4">
+          <div class=" w-20 aspect-square">
+            <svelte:component this={getIcon(s.id)} />
+          </div>
 
-        <h3 class=" text-gray-300 font-bold tracking-tight text-xl">
-          {s.head}
-        </h3>
-        <p class=" text-gray-400 text-sm">
-          {s.content}
-        </p>
-        <div class=" h-full" />
-      </div>
+          <div class=" h-full" />
+
+          <h3 class=" transition-all font-bold tracking-tight text-xl">
+            {s.head}
+          </h3>
+          <p class=" text-sm transition-all">
+            {s.content}
+          </p>
+          <div class=" h-full" />
+        </div>
+      </a>
     {/each}
   </div>
 </div>
+
+<style>
+  .card:hover > div > p {
+    color: #9ca3af;
+  }
+  .card:hover {
+    color: #ef4444;
+  }
+  .card:hover > div > h3 {
+    color: #d1d5db;
+  }
+  .card > div > h3 {
+    color: #9ca3af;
+  }
+  .text-bg {
+    font-size: 120px;
+    line-height: 12px;
+  }
+</style>

@@ -82,7 +82,7 @@
       class=" absolute top-0 z-50 left-0 flex items-end justify-center h-full w-full"
     >
       <h1
-        class=" text-4xl md:text-5xl mx-2 mb-12 text-center max-w-3xl text-gray-50 tracking-tight"
+        class=" text-4xl md:text-5xl mx-2 mb-12 text-center max-w-3xl text-gray-300 tracking-tight"
       >
         {toTitleCase(data.category)}: {data.name}
       </h1>

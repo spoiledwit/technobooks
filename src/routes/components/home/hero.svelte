@@ -42,14 +42,13 @@
 
   <div class=" flex flex-col md:flex-row px-4 md:px-20 gap-8 md:gap-32">
     <div class=" flex flex-col gap-12 w-full h-full justify-center">
-      <h1 class=" text-5xl md:text-7xl text-center md:text-start text-gray-50">
-        The Future of Payments <span class=" font-serif text-red-200">
-          Is Here</span
-        >
+      <h1 class=" text-5xl md:text-7xl text-center md:text-start text-gray-300">
+        Harmonizing IT and Finance for Limitless
+        <span class=" font-serif text-red-200">Success</span>
       </h1>
-      <p class=" text-gray-50 text-center md:text-start">
-        Payments, subscriptions, taxes and analytics are all part of the
-        equation when it comes to running a business in the modern world.
+      <p class=" text-gray-300 text-center md:text-start">
+        Seamless IT and Financial Solutions for Your Success. Navigate the
+        Future with Confidence.
       </p>
 
       <div class=" flex flex-col md:flex-row items-center gap-8 w-full">
@@ -101,13 +100,12 @@
               <FaLandmark />
             </div>
             <section class=" flex flex-col h-full justify-evenly">
-              <h4 class=" text-gray-50">Payment is submitted</h4>
-              <p class=" text-gray-500 text-xs">3 hours ago</p>
+              <h4 class=" text-gray-300">Payment is submitted</h4>
+              <p class=" text-gray-400 text-xs">3 hours ago</p>
             </section>
           </Card>
           <Card className=" h-[187px] w-5/6 relative overflow-hidden">
             <img
-              loading="lazy"
               src={chart}
               alt="sample chart"
               class=" absolute bottom-0 -left-4 scale-x-[1.2] hue-rotate-[160deg]"
@@ -115,17 +113,17 @@
             <div
               class=" absolute w-full h-full top-0 left-0 p-4 flex flex-col gap-2"
             >
-              <h3 class=" text-gray-50 text-sm">MRP</h3>
+              <h3 class=" text-gray-300 text-sm">MRP</h3>
               <div class=" flex justify-between font-bold w-full items-center">
-                <p class=" text-lg text-gray-50">$ 3223.0</p>
-                <p class=" text-xs text-red-500">+4.6%</p>
+                <p class=" text-lg text-gray-300">$ 3223.0</p>
+                <p class=" text-xs text-red-400 -mt-2">+4.6%</p>
                 <div />
               </div>
             </div>
           </Card>
         </div>
         <Card className=" w-[45.4%] h-full flex flex-col gap-4">
-          <h3 class=" text-gray-50">Overview</h3>
+          <h3 class=" text-gray-300">Overview</h3>
           <StatsRow>
             <FaAlignLeft />
           </StatsRow>
@@ -142,7 +140,7 @@
       </div>
       <div class=" flex w-full gap-4">
         <Card className=" w-[45%] h-full flex flex-col gap-4">
-          <h3 class=" text-gray-50">Enable Currencies</h3>
+          <h3 class=" text-gray-300">Enable Currencies</h3>
           <CurrencyRow>
             <FaFlagUsa />
           </CurrencyRow>
@@ -159,22 +157,22 @@
         <Card className=" w-[45%] h-full flex flex-col gap-2">
           <div class=" flex w-full justify-between items-center">
             <div class=" flex flex-col w-full gap-2">
-              <h3 class=" text-gray-50">Checkout</h3>
+              <h3 class=" text-gray-300">Checkout</h3>
 
-              <div class=" w-2/3 h-3 rounded-full bg-gray-300" />
+              <div class=" w-2/3 h-3 rounded-full bg-neutral-700" />
             </div>
             <p class=" text-gray-500 italic font-bold">$320.0</p>
           </div>
           <input
             disabled
             placeholder="Enter your card number"
-            class=" mt-2 h-10 px-4 bg-gray-300/30 rounded-md w-full placeholder:text-gray-400"
+            class=" mt-2 h-10 px-4 bg-neutral-700/30 rounded-md w-full placeholder:text-gray-400"
           />
           <div class=" mt-2 flex w-full gap-2">
             <div class=" w-4 h-4 border-[1px] border-slate-400 rounded-sm" />
             <div class=" flex flex-col gap-2 w-full">
-              <div class=" w-full h-3 rounded-full bg-gray-300" />
-              <div class=" w-1/2 h-3 rounded-full bg-slate-300" />
+              <div class=" w-full h-3 rounded-full bg-neutral-700" />
+              <div class=" w-1/2 h-3 rounded-full bg-zinc-700" />
             </div>
           </div>
           <CTA disabled className=" mt-4 w-full h-10 disabled:hover:bg-red-500"

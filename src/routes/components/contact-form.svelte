@@ -19,7 +19,7 @@
     className}
 >
   <h2
-    class=" w-full md:w-2/3 xl:w-2/5 text-5xl text-center text-gray-300 tracking-tight"
+    class=" w-full text-5xl md:text-7xl font-serif text-center text-red-200 tracking-tight"
   >
     Get In Touch With Us!
   </h2>

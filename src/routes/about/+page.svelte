@@ -4,6 +4,7 @@
 
 <div class=" w-full h-full absolute opacity-20">
   <img
+    loading="lazy"
     alt="hero beam background"
     src={beam}
     class=" w-full h-full object-fill hue-rotate-[30deg]"
@@ -15,7 +16,7 @@
 >
   <h2
     id="our-view"
-    class=" text-5xl font-normal mb-4 text-center md:text-start text-gray-50"
+    class=" text-5xl font-normal mb-4 text-center md:text-start text-gray-300"
   >
     Our View
   </h2>
@@ -31,7 +32,7 @@
   </p>
   <h2
     id="what-we-do"
-    class=" text-5xl font-normal mb-4 mt-8 text-center md:text-start text-gray-50"
+    class=" text-5xl font-normal mb-4 mt-8 text-center md:text-start text-gray-300"
   >
     What We Do
   </h2>

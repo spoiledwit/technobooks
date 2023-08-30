@@ -4,13 +4,15 @@
   import Services from "./components/home/services.svelte";
 
   import beams from "../assets/img/1-beams.webp";
-  import Support from "./components/home/support.svelte";
+  import About from "./components/home/about.svelte";
+  import Testimonials from "./components/navbar/testimonials.svelte";
 </script>
 
 <div class=" flex flex-col gap-24 md:gap-32">
   <Hero />
+  <About />
   <Services />
-  <Support />
+  <Testimonials />
 
   <div
     class=" h-max relative overflow-hidden pb-12"

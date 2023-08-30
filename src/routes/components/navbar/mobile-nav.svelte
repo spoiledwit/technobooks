@@ -28,7 +28,7 @@
   }
 </script>
 
-<div class=" md:hidden mt-4 w-min z-50 flex justify-end">
+<div class=" md:hidden mt-4 w-min z-[60] flex justify-end">
   {#if isMobileNavOpen}
     <div
       transition:fly={{ y: 32, duration: 120 }}
