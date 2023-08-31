@@ -1,6 +1,6 @@
 <script>
   import Card from "../card.svelte";
-
+  import MdCheck from "svelte-icons/md/MdCheck.svelte";
   import amazon from "../../../assets/img/amazon.webp";
   import vercel from "../../../assets/img/vercel.webp";
   import google from "../../../assets/img/google.webp";
@@ -140,7 +140,7 @@
       </div>
       <div class=" flex w-full gap-4">
         <Card className=" w-[45%] h-full flex flex-col gap-4">
-          <h3 class=" text-gray-300">Enable Currencies</h3>
+          <h3 class=" text-gray-300">Choose Services</h3>
           <CurrencyRow>
             <FaFlagUsa />
           </CurrencyRow>
@@ -157,17 +157,29 @@
         <Card className=" w-[45%] h-full flex flex-col gap-2">
           <div class=" flex w-full justify-between items-center">
             <div class=" flex flex-col w-full gap-2">
-              <h3 class=" text-gray-300">Checkout</h3>
-
-              <div class=" w-2/3 h-3 rounded-full bg-neutral-700" />
+              <h3 class=" text-gray-300">Tests</h3>
             </div>
-            <p class=" text-gray-500 italic font-bold">$320.0</p>
+            <p class=" text-gray-500 italic font-bold">12/12</p>
           </div>
-          <input
-            disabled
-            placeholder="Enter your card number"
-            class=" mt-2 h-10 px-4 bg-neutral-700/30 rounded-md w-full placeholder:text-gray-400"
-          />
+
+          <div class=" flex gap-1 items-center">
+            <div class=" text-green-400 w-5 aspect-square">
+              <MdCheck />
+            </div>
+            <div class=" w-2/3 h-3 rounded-full bg-neutral-700" />
+          </div>
+          <div class=" flex gap-1 items-center">
+            <div class=" text-green-400 w-5 aspect-square">
+              <MdCheck />
+            </div>
+            <div class=" w-2/3 h-3 rounded-full bg-neutral-700" />
+          </div>
+          <div class=" flex gap-1 items-center">
+            <div class=" text-green-400 w-5 aspect-square">
+              <MdCheck />
+            </div>
+            <div class=" w-2/3 h-3 rounded-full bg-neutral-700" />
+          </div>
           <div class=" mt-2 flex w-full gap-2">
             <div class=" w-4 h-4 border-[1px] border-slate-400 rounded-sm" />
             <div class=" flex flex-col gap-2 w-full">
@@ -175,8 +187,10 @@
               <div class=" w-1/2 h-3 rounded-full bg-zinc-700" />
             </div>
           </div>
-          <CTA disabled className=" mt-4 w-full h-10 disabled:hover:bg-red-500"
-            >Pay by Card</CTA
+          <CTA
+            disabled
+            className=" mt-4 w-full h-10 bg-green-500 hover:bg-green-500"
+            >Deploy</CTA
           >
         </Card>
       </div>

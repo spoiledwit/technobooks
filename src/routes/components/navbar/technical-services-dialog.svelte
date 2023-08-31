@@ -16,20 +16,18 @@
     <div
       class=" flex gap-8 mt-4 border-[1px] border-zinc-700 bg-zinc-900 rounded-md shadow-2xl shadow-black/70 px-4 py-8"
     >
-      {#each Object.entries(nav) as e}
+      {#each Object.entries(nav) as [path, name]}
         <div class=" flex flex-col gap-2">
           <p class=" text-gray-300 font-bold text-sm whitespace-nowrap">
-            {toTitleCase(e[0])}
+            {name}
           </p>
-          {#each e[1] as service}
-            <a
-              on:click={() => (open = false)}
-              href={`/services/${service}`}
-              class=" text-sm text-gray-400 hover:text-gray-200 transition-all"
-            >
-              {toTitleCase(service)}
-            </a>
-          {/each}
+          <a
+            on:click={() => (open = false)}
+            href={`/services/${path}`}
+            class=" text-sm text-gray-400 hover:text-gray-200 transition-all"
+          >
+            {name}
+          </a>
         </div>
       {/each}
     </div>
