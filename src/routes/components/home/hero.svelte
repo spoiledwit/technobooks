@@ -100,8 +100,8 @@
               <FaLandmark />
             </div>
             <section class=" flex flex-col h-full justify-evenly">
-              <h4 class=" text-gray-300">Payment is submitted</h4>
-              <p class=" text-gray-400 text-xs">3 hours ago</p>
+              <h4 class=" text-gray-300">Balance Sheet is Ready!</h4>
+              <p class=" text-gray-400 text-xs">3 min ago</p>
             </section>
           </Card>
           <Card className=" h-[187px] w-5/6 relative overflow-hidden">
