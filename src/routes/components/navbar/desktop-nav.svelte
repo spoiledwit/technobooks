@@ -73,5 +73,8 @@
     <li class=" hover:text-red-400 transition-all cursor-pointer">
       <a href="/privacy-policy">Privacy</a>
     </li>
+    <li class=" hover:text-red-400 transition-all cursor-pointer">
+      <a href="/contact">Contact</a>
+    </li>
   </ul>
 </Card>

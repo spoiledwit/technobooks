@@ -97,7 +97,7 @@
           <a
             on:click={closeDialog}
             class=" py-[6px] tracking-wider text-lg text-gray-300"
-            href="/"
+            href="/about"
           >
             About
           </a>
@@ -106,9 +106,18 @@
           <a
             on:click={closeDialog}
             class=" py-[6px] tracking-wider text-lg text-gray-300"
-            href="/"
+            href="/privacy-policy"
           >
             Privacy
+          </a>
+        </li>
+        <li>
+          <a
+            on:click={closeDialog}
+            class=" py-[6px] tracking-wider text-lg text-gray-300"
+            href="/contact"
+          >
+            Contact
           </a>
         </li>
       </ul>

@@ -9,10 +9,10 @@
 </script>
 
 <div class=" flex flex-col gap-24 md:gap-32">
-  <!-- <Hero />
+  <Hero />
   <About />
   <Services />
-  <Testimonials /> -->
+  <Testimonials />
 
   <div
     class=" h-max relative overflow-hidden pb-12"
