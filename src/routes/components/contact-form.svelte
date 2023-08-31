@@ -8,7 +8,9 @@
   import { enhance } from "$app/forms";
 
   import MdPhone from "svelte-icons/md/MdPhone.svelte";
-  import FaRegAddressCard from "svelte-icons/fa/FaRegAddressCard.svelte";
+  import MdLocationOn from "svelte-icons/md/MdLocationOn.svelte";
+  import DiWebplatform from "svelte-icons/di/DiWebplatform.svelte";
+  import MdEmail from "svelte-icons/md/MdEmail.svelte";
 
   export let className: string = "";
 </script>
@@ -43,12 +45,29 @@
         </div>
         <p class=" text-gray-300 font-bold">+92 333 1234567</p>
       </div>
+      <a href="/" class=" w-full gap-4 flex items-center">
+        <div class=" w-8 text-gray-300">
+          <DiWebplatform />
+        </div>
+        <p class=" text-gray-300 font-bold">www.technobooks.com</p>
+      </a>
       <div class=" w-full gap-4 flex items-center">
         <div class=" w-8 text-gray-300">
-          <FaRegAddressCard />
+          <MdLocationOn />
         </div>
-        <p class=" text-gray-300 font-bold">Street no.1, City, State</p>
+        <p class=" text-gray-300 font-bold">
+          2301 3rd Ave, Seattle Washington (98121)
+        </p>
       </div>
+      <a
+        href="mailto:info@technobooks.com"
+        class=" w-full gap-4 flex items-center"
+      >
+        <div class=" w-8 text-gray-300">
+          <MdEmail />
+        </div>
+        <p class=" text-gray-300 font-bold">info@technobooks.com</p>
+      </a>
       <div class="h-full" />
     </div>
 
