@@ -13,7 +13,7 @@
   <img
     loading="lazy"
     draggable="false"
-    class=" absolute pointer-events-none top-0 z-10 right-0 h-full w-full md:w-1/2 rotate-45 hue-rotate-[225deg]"
+    class=" absolute pointer-events-none top-0 z-10 right-0 h-full w-full md:w-1/2 rotate-45 hue-rotate-[105deg]"
     src={beams}
     alt="beams"
   />
