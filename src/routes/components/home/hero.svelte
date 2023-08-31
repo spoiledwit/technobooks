@@ -104,7 +104,7 @@
               <p class=" text-gray-400 text-xs">3 min ago</p>
             </section>
           </Card>
-          <Card className=" h-[187px] w-5/6 relative overflow-hidden">
+          <Card className=" h-[187px] w-full md:w-5/6 relative overflow-hidden">
             <img
               src={chart}
               alt="sample chart"
@@ -154,7 +154,7 @@
             <FaPhoenixFramework />
           </CurrencyRow>
         </Card>
-        <Card className=" w-[45%] h-full flex flex-col gap-2">
+        <Card className=" w-1/2 md:w-[45%] h-full flex flex-col gap-2">
           <div class=" flex w-full justify-between items-center">
             <div class=" flex flex-col w-full gap-2">
               <h3 class=" text-gray-300">Tests</h3>
