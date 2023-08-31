@@ -8,7 +8,7 @@
 </script>
 
 <div>
-  <label for={id} class="block mb-2 text-sm font-medium text-gray-700"
+  <label for={id} class="block mb-2 text-sm font-medium text-gray-300"
     >{label}</label
   >
   <div class="relative mb-6">
@@ -22,7 +22,7 @@
       {id}
       {name}
       {required}
-      class=" border-2 border-gray-300 text-gray-700 text-sm rounded-lg ring-0 focus:border-green-600 block w-full pl-10 p-2.5 bg-black/[0.03] outline-0 transition-all"
+      class=" border-2 border-gray-300 text-gray-300 text-sm rounded-lg ring-0 focus:border-red-400 block w-full pl-10 p-2.5 bg-white/[0.05] outline-0 transition-all"
       {placeholder}
     />
   </div>

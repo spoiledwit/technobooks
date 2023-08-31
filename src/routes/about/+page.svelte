@@ -1,9 +1,22 @@
+<script>
+  import beam from "../../assets/img/1-beam.png";
+</script>
+
+<div class=" w-full h-full absolute opacity-20">
+  <img
+    loading="lazy"
+    alt="hero beam background"
+    src={beam}
+    class=" w-full h-full object-fill hue-rotate-[30deg]"
+  />
+</div>
+
 <article
-  class=" min-w-full flex flex-col prose text-justify text-gray-700 gap-4 mt-10 mb-20 px-4 md:px-28 lg:px-60 xl:px-96"
+  class=" min-w-full flex flex-col prose text-justify text-gray-300 gap-4 pt-10 pb-20 px-4 md:px-28 lg:px-60 xl:px-96"
 >
   <h2
     id="our-view"
-    class=" text-5xl font-normal mb-4 text-center md:text-start text-gray-900"
+    class=" text-5xl font-normal mb-4 text-center md:text-start text-gray-300"
   >
     Our View
   </h2>
@@ -19,7 +32,7 @@
   </p>
   <h2
     id="what-we-do"
-    class=" text-5xl font-normal mb-4 mt-8 text-center md:text-start text-gray-900"
+    class=" text-5xl font-normal mb-4 mt-8 text-center md:text-start text-gray-300"
   >
     What We Do
   </h2>

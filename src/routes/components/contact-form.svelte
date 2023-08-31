@@ -1,14 +1,16 @@
 <script lang="ts">
-  import Input from "../input.svelte";
+  import Input from "./input.svelte";
 
-  import user from "../../../assets/user.svg";
-  import email from "../../../assets/email.svg";
-  import Textarea from "../textarea.svelte";
-  import CTA from "../cta.svelte";
+  import user from "../../assets/user.svg";
+  import email from "../../assets/email.svg";
+  import Textarea from "./textarea.svelte";
+  import CTA from "./cta.svelte";
   import { enhance } from "$app/forms";
 
   import MdPhone from "svelte-icons/md/MdPhone.svelte";
-  import FaRegAddressCard from "svelte-icons/fa/FaRegAddressCard.svelte";
+  import MdLocationOn from "svelte-icons/md/MdLocationOn.svelte";
+  import DiWebplatform from "svelte-icons/di/DiWebplatform.svelte";
+  import MdEmail from "svelte-icons/md/MdEmail.svelte";
 
   export let className: string = "";
 </script>
@@ -19,17 +21,17 @@
     className}
 >
   <h2
-    class=" w-full md:w-2/3 xl:w-2/5 text-5xl text-center text-zinc-700 tracking-tight"
+    class=" w-full text-5xl md:text-7xl font-serif text-center text-red-200 tracking-tight"
   >
     Get In Touch With Us!
   </h2>
 
   <div class=" flex flex-col md:flex-row w-full gap-12">
     <div class="w-full gap-4 flex flex-col">
-      <h3 class=" text-gray-700 text-xl font-bold tracking-tight">
+      <h3 class=" text-gray-300 text-xl font-bold tracking-tight">
         Contact Us
       </h3>
-      <p class=" text-gray-500 text-sm">
+      <p class=" text-gray-400 text-sm">
         It is our pleasure to serve you and your company on both; short & long
         term business relationship contact. We provide IT services for new
         customer and our existed clients. And our client's satisfaction is our
@@ -38,17 +40,34 @@
       </p>
       <div class="h-full" />
       <div class=" w-full gap-4 flex items-center">
-        <div class=" w-8 text-gray-700">
+        <div class=" w-8 text-gray-300">
           <MdPhone />
         </div>
-        <p class=" text-gray-700 font-bold">+92 333 1234567</p>
+        <p class=" text-gray-300 font-bold">+92 333 1234567</p>
       </div>
-      <div class=" w-full gap-4 flex items-center">
-        <div class=" w-8 text-gray-700">
-          <FaRegAddressCard />
+      <a href="/" class=" w-full gap-4 flex items-center">
+        <div class=" w-8 text-gray-300">
+          <DiWebplatform />
         </div>
-        <p class=" text-gray-700 font-bold">Street no.1, City, State</p>
+        <p class=" text-gray-300 font-bold">www.technobooks.com</p>
+      </a>
+      <div class=" w-full gap-4 flex items-center">
+        <div class=" w-8 text-gray-300">
+          <MdLocationOn />
+        </div>
+        <p class=" text-gray-300 font-bold">
+          2301 3rd Ave, Seattle Washington (98121)
+        </p>
       </div>
+      <a
+        href="mailto:info@technobooks.com"
+        class=" w-full gap-4 flex items-center"
+      >
+        <div class=" w-8 text-gray-300">
+          <MdEmail />
+        </div>
+        <p class=" text-gray-300 font-bold">info@technobooks.com</p>
+      </a>
       <div class="h-full" />
     </div>
 

@@ -1,0 +1,33 @@
+{
+  "bookkeeping services": [
+    "recording-financial-transactions",
+    "maintaining-ledgers-and-journals",
+    "bank-reconciliations",
+    "accounts-payable-and-receivable-management"
+  ],
+  "financial statement preparation": [
+    "balance-sheets",
+    "income-statements",
+    "cash-flow-statements"
+  ],
+  "taxation services": [
+    "filing-vat-returns",
+    "corporate-tax-planning",
+    "tax-compliance-and-reporting"
+  ],
+  "payroll services": [
+    "payroll-processing",
+    "employee-benefits-administration",
+    "end-of-year-tax-forms"
+  ],
+  "financial analysis and reporting": [
+    "financial-ratio-analysis",
+    "budgeting-and-forecasting",
+    "customized-financial-reports"
+  ],
+
+  "auditing and assurance": [
+    "external-and-internal-audits",
+    "reviewing-financial-records"
+  ]
+}
