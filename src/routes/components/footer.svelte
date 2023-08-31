@@ -39,7 +39,6 @@
           </p>
           {#each e[1] as service}
             <a
-              on:click={() => (open = false)}
               href={`/services/${service}`}
               class=" text-sm text-gray-400 hover:text-gray-200 transition-all"
             >
