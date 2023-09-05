@@ -1,17 +1,14 @@
 <script lang="ts">
   import Input from "./input.svelte";
-
   import user from "../../assets/user.svg";
   import email from "../../assets/email.svg";
   import Textarea from "./textarea.svelte";
   import CTA from "./cta.svelte";
   import { enhance } from "$app/forms";
-
   import MdPhone from "svelte-icons/md/MdPhone.svelte";
   import MdLocationOn from "svelte-icons/md/MdLocationOn.svelte";
   import DiWebplatform from "svelte-icons/di/DiWebplatform.svelte";
   import MdEmail from "svelte-icons/md/MdEmail.svelte";
-
   export let className: string = "";
 </script>
 
@@ -43,20 +40,20 @@
         <div class=" w-8 text-gray-300">
           <MdPhone />
         </div>
-        <p class=" text-gray-300 font-bold">+92 333 1234567</p>
+        <p class=" text-gray-300 font-bold">+971 521508056</p>
       </div>
       <a href="/" class=" w-full gap-4 flex items-center">
         <div class=" w-8 text-gray-300">
           <DiWebplatform />
         </div>
-        <p class=" text-gray-300 font-bold">www.technobooks.com</p>
+        <p class=" text-gray-300 font-bold">www.tbcgulf.com</p>
       </a>
       <div class=" w-full gap-4 flex items-center">
         <div class=" w-8 text-gray-300">
           <MdLocationOn />
         </div>
         <p class=" text-gray-300 font-bold">
-          2301 3rd Ave, Seattle Washington (98121)
+          IFZA, Silicon Oasis, DDP, Building A1, Dubai, UAE
         </p>
       </div>
       <a
@@ -66,7 +63,7 @@
         <div class=" w-8 text-gray-300">
           <MdEmail />
         </div>
-        <p class=" text-gray-300 font-bold">info@technobooks.com</p>
+        <p class=" text-gray-300 font-bold">info@tbcgulf.com</p>
       </a>
       <div class="h-full" />
     </div>
@@ -76,19 +73,19 @@
       method="POST"
       use:enhance
     >
-      <div class=" w-full flex flex-col gap-4">
+      <div class="w-full flex flex-col gap-4">
         <Input
           required
           name="full-name"
           id="full-name"
           label="Full Name"
-          placeholder="Elon Musk"
+          placeholder="John Doe"
         >
           <img
             loading="lazy"
-            src={email}
+            src={user}
             alt="user icon"
-            class=" w-5"
+            class="w-5"
             slot="icon"
           />
         </Input>
@@ -98,13 +95,13 @@
           id="email"
           type="email"
           label="Your Email"
-          placeholder="name@domain.com"
+          placeholder="example@example.com"
         >
           <img
             loading="lazy"
-            src={user}
+            src={email}
             alt="email icon"
-            class=" w-5"
+            class="w-5"
             slot="icon"
           />
         </Input>
@@ -113,9 +110,8 @@
       <Textarea
         name="experience"
         id="experience"
-        placeholder="Prior experience (if any)"
+        placeholder="Please provide details about your business or specific needs"
       />
-
       <CTA type="submit" className="w-32 h-10 self-end">Submit</CTA>
     </form>
   </div>

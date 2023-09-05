@@ -2,7 +2,6 @@
   import ContactForm from "./components/contact-form.svelte";
   import Hero from "./components/home/hero.svelte";
   import Services from "./components/home/services.svelte";
-
   import beams from "../assets/img/1-beams.webp";
   import About from "./components/home/about.svelte";
   import Testimonials from "./components/navbar/testimonials.svelte";
@@ -31,5 +30,4 @@
     <ContactForm className="z-50" />
   </div>
 </div>
-
 <div class=" h-20" />

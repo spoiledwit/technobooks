@@ -1,6 +1,6 @@
 <script>
-  import about from "../../../assets/img/home-about.png";
-  import office from "../../../assets/img/office.jpg";
+  import about from "../../../assets/finance1.png";
+  import office from "../../../assets/finaneCover1.jpg";
 </script>
 
 <div class=" flex flex-col md:flex-row px-4 md:px-20 lg:px-40 xl:px-60">
