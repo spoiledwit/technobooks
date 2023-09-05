@@ -1,18 +1,18 @@
 <script lang="ts">
-  import bookkeeping from "../../../assets/img/bookkeeping.jpg";
-  import financialStatement from "../../../assets/img/financial-statement.jpg";
-  import payroll from "../../../assets/img/payroll.jpg";
-  import auditing from "../../../assets/img/auditing.jpg";
-  import taxation from "../../../assets/img/taxation.png";
-  import analysis from "../../../assets/img/analysis.jpg";
-  import web from "../../../assets/img/web.jpg";
-  import app from "../../../assets/img/app.jpg";
-  import blockchain from "../../../assets/img/blockchain.jpg";
-  import customSoftware from "../../../assets/img/custom-software.jpg";
-  import digitalMarketing from "../../../assets/img/digital-marketing.jpg";
+  import bookkeeping from "../../../assets/img/bookkeeping.webp";
+  import financialStatement from "../../../assets/img/financial-statement.webp";
+  import payroll from "../../../assets/img/payroll.webp";
+  import auditing from "../../../assets/img/auditing.webp";
+  import taxation from "../../../assets/img/taxation.webp";
+  import analysis from "../../../assets/img/analysis.webp";
+  import web from "../../../assets/img/web.webp";
+  import app from "../../../assets/img/app.webp";
+  import blockchain from "../../../assets/img/blockchain.webp";
+  import customSoftware from "../../../assets/img/custom-software.webp";
+  import digitalMarketing from "../../../assets/img/digital-marketing.webp";
   import { toKebabCase, toTitleCase } from "$lib/utils";
   import { page } from "$app/stores";
-  import beam from "../../../assets/img/1-beam.png";
+  import beam from "../../../assets/img/1-beam.webp";
 
   export let data: {
     category: string;
@@ -87,7 +87,7 @@
     </div>
 
     <div
-      class=" z-40 h-full flex items-center justify-center md:rounded-3xl overflow-hidden"
+      class=" z-40 h-full aspect-[1920/1200] bg-[rgba(31,31,33,0.75)] flex items-center justify-center md:rounded-3xl overflow-hidden"
     >
       <img
         loading="lazy"

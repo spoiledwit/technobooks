@@ -1,6 +1,6 @@
 <script lang="ts">
-  import client1 from "../../../assets/img/client1.jpg";
-  import client2 from "../../../assets/img/client2.jpg";
+  import client1 from "../../../assets/img/client1.webp";
+  import client2 from "../../../assets/img/client2.webp";
 
   const testimonials = [
     {

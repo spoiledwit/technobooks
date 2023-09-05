@@ -1,5 +1,5 @@
 <script>
-  import beam from "../../assets/img/1-beam.png";
+  import beam from "../../assets/img/1-beam.webp";
 </script>
 
 <div class=" w-full h-full absolute opacity-20">

@@ -1,32 +1,120 @@
 <script>
   import CTA from "../cta.svelte";
-	let bgImage = 'https://scontent.flyp1-1.fna.fbcdn.net/v/t1.6435-9/116254608_114519363681211_6842813986291018124_n.jpg?stp=c98.0.1035.540a_dst-jpg_p180x540&_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_ohc=0WxDe6SjLlkAX_MhFaI&_nc_ht=scontent.flyp1-1.fna&oh=00_AfCCL7geWaCNsreRgnI1wNRgc-VPu56uYK9KEaCVCyf2kA&oe=651DF2B1';
+
+  import hero1 from "../../../assets/img/home-hero-1.webp";
+  import hero2 from "../../../assets/img/home-hero-2.webp";
+  import hero4 from "../../../assets/img/home-hero-4.jpg";
+  import hero5 from "../../../assets/img/home-hero-5.jpg";
+  import { onMount } from "svelte";
+
+  import Siema from "siema";
+
+  let slider;
+  onMount(() => {
+    slider = new Siema({
+      selector: ".siema",
+      duration: 200,
+      easing: "ease-in-out",
+      perPage: 1,
+      startIndex: 0,
+      draggable: true,
+      multipleDrag: true,
+      threshold: 20,
+      loop: true,
+      rtl: false,
+      onInit: () => {},
+      onChange: () => {},
+    });
+
+    const interval = setInterval(() => {
+      slider.next();
+    }, 2500);
+
+    return () => {
+      clearInterval(interval);
+    };
+  });
 </script>
 
-<div
-  class=" w-full h-screen relative overflow-hidden pb-12"
-  style="background-image: url('{bgImage}');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  "
-  >
+<div class=" w-full h-screen relative overflow-hidden pb-12 flex">
+  <div class=" siema w-full absolute h-[90vh]">
+    <div class="  w-full h-[90vh] relative">
+      <section
+        class=" z-10 absolute w-full top-1/2 max-w-2xl -translate-y-1/2 md:left-20"
+      >
+        <h1
+          class="text-5xl md:text-7xl text-center md:text-start text-gray-300"
+        >
+          Empowering Your Digital
+          <strong class=" text-red-300"> Potential </strong>
+        </h1>
+        <p class=" text-gray-300 text-center mt-4 md:text-start">
+          Unlock Comprehensive IT Solutions for Seamless Success in the Digital
+          Age. Your Trusted Partner in Navigating the Ever-Evolving IT
+          Landscape.
+        </p>
+      </section>
+      <img
+        draggable="false"
+        alt="hero 2"
+        src={hero2}
+        class=" w-full object-cover h-[90vh]"
+      />
+    </div>
+    <div class="  w-full h-[90vh] relative">
+      <section
+        class=" absolute z-10 w-full top-1/2 max-w-2xl -translate-y-1/2 md:left-20"
+      >
+        <h1
+          class="text-5xl md:text-7xl text-center md:text-start text-gray-300"
+        >
+          Elevate Your Tech, Elevate Your
+          <strong class=" text-red-300"> Business </strong>
+        </h1>
+        <p class=" text-gray-300 text-center mt-4 md:text-start">
+          Your Trusted Partner in Delivering Complete IT Excellence: Tailored
+          Solutions, Unparalleled Support, and Technological Innovation.
+        </p>
+      </section>
+      <img
+        draggable="false"
+        alt="hero 1"
+        src={hero1}
+        class=" w-full object-cover h-[90vh] -scale-x-[1.0]"
+      />
+    </div>
+    <div class="  w-full h-[90vh] relative">
+      <section
+        class=" absolute z-10 w-full top-1/2 max-w-2xl -translate-y-1/2 md:left-20"
+      >
+        <h1
+          class="text-5xl md:text-7xl text-center md:text-start text-gray-300"
+        >
+          Bridging Finance and Technology for
+          <strong class=" text-red-300"> Business Growth </strong>
+        </h1>
+        <p class=" text-gray-300 text-center mt-4 md:text-start">
+          Seamless IT and Financial Solutions for Your Success. Navigate the
+          Future with Confidence.
+        </p>
+      </section>
+
+      <img
+        draggable="false"
+        alt="hero 3"
+        src={hero5}
+        class=" w-full object-cover -scale-x-100 h-[90vh]"
+      />
+    </div>
+  </div>
 
   <div
-    class="mt-40"
-  />
-
-  <div class="flex flex-col md:flex-row px-4 md:px-20 gap-8 md:gap-32">
-    <div class=" flex flex-col gap-12 w-full h-full justify-center leading">
-      <h1 class="text-5xl md:text-7xl text-center md:text-start text-gray-300">
-        Bridging Finance and <br> Technology for <br> <strong class=" text-red-300"> Business Growth </strong>
-      </h1>
-      <p class=" text-gray-300 text-center md:text-start">
-        Seamless IT and Financial Solutions for Your Success. Navigate the
-        Future with Confidence.
-      </p>
-
-      <div class=" flex flex-col md:flex-row items-center gap-8 w-full">
+    class="flex z-10 w-full md:w-auto flex-col md:flex-row px-4 md:px-20 gap-8 md:gap-32"
+  >
+    <div class=" flex flex-col gap-12 w-full h-full justify-end leading">
+      <div
+        class=" flex mb-20 md:mb-32 flex-col md:flex-row items-center gap-8 w-full"
+      >
         <input
           class=" h-12 w-full md:w-96 bg-white/[0.03] ring-0 outline-0 focus:border-red-500 rounded-md px-4 border-[1px] border-gray-500 text-gray-300 placeholder:text-gray-500"
           placeholder="Enter your email..."
@@ -34,8 +122,6 @@
         <CTA className="w-48 h-12">Get Started</CTA>
       </div>
     </div>
-    <div>
-  </div>
-
+    <div />
   </div>
 </div>
