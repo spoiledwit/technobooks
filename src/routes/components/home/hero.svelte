@@ -4,6 +4,7 @@
   import hero1 from "../../../assets/img/home-hero-1.webp";
   import hero2 from "../../../assets/img/home-hero-2.webp";
   import hero4 from "../../../assets/img/home-hero-4.jpg";
+  import hero5 from "../../../assets/img/home-hero-5.jpg";
   import { onMount } from "svelte";
 
   import Siema from "siema";
@@ -44,12 +45,13 @@
         <h1
           class="text-5xl md:text-7xl text-center md:text-start text-gray-300"
         >
-          Bridging Finance and Technology for
-          <strong class=" text-red-300"> Business Growth </strong>
+          Empowering Your Digital
+          <strong class=" text-red-300"> Potential </strong>
         </h1>
         <p class=" text-gray-300 text-center mt-4 md:text-start">
-          Seamless IT and Financial Solutions for Your Success. Navigate the
-          Future with Confidence.
+          Unlock Comprehensive IT Solutions for Seamless Success in the Digital
+          Age. Your Trusted Partner in Navigating the Ever-Evolving IT
+          Landscape.
         </p>
       </section>
       <img
@@ -66,12 +68,12 @@
         <h1
           class="text-5xl md:text-7xl text-center md:text-start text-gray-300"
         >
-          Bridging Finance and Technology for
-          <strong class=" text-red-300"> Business Growth </strong>
+          Elevate Your Tech, Elevate Your
+          <strong class=" text-red-300"> Business </strong>
         </h1>
         <p class=" text-gray-300 text-center mt-4 md:text-start">
-          Seamless IT and Financial Solutions for Your Success. Navigate the
-          Future with Confidence.
+          Your Trusted Partner in Delivering Complete IT Excellence: Tailored
+          Solutions, Unparalleled Support, and Technological Innovation.
         </p>
       </section>
       <img
@@ -100,8 +102,8 @@
       <img
         draggable="false"
         alt="hero 3"
-        src={hero4}
-        class=" w-full object-cover h-[90vh] brightness-75"
+        src={hero5}
+        class=" w-full object-cover -scale-x-100 h-[90vh]"
       />
     </div>
   </div>
