@@ -87,7 +87,7 @@
     </div>
 
     <div
-      class=" z-40 h-full flex items-center justify-center md:rounded-3xl overflow-hidden"
+      class=" z-40 h-full aspect-[1920/1200] bg-[rgba(31,31,33,0.75)] flex items-center justify-center md:rounded-3xl overflow-hidden"
     >
       <img
         loading="lazy"

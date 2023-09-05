@@ -1,25 +1,42 @@
 <script>
   import CTA from "../cta.svelte";
-	let bgImage = 'https://scontent.flyp1-1.fna.fbcdn.net/v/t1.6435-9/116254608_114519363681211_6842813986291018124_n.jpg?stp=c98.0.1035.540a_dst-jpg_p180x540&_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_ohc=0WxDe6SjLlkAX_MhFaI&_nc_ht=scontent.flyp1-1.fna&oh=00_AfCCL7geWaCNsreRgnI1wNRgc-VPu56uYK9KEaCVCyf2kA&oe=651DF2B1';
+
+  import Carousel from "svelte-carousel";
+
+  import hero1 from "../../../assets/img/home-hero-1.webp";
+  import hero2 from "../../../assets/img/home-hero-2.webp";
+  import hero4 from "../../../assets/img/home-hero-4.jpg";
 </script>
 
-<div
-  class=" w-full h-screen relative overflow-hidden pb-12"
-  style="background-image: url('{bgImage}');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  "
-  >
+<div class=" w-full h-screen relative overflow-hidden pb-12 flex">
+  <div class=" w-full h-[90vh] bg-gray-800 absolute top-0 left-0">
+    <Carousel
+      arrows={false}
+      infinite={true}
+      autoplay={true}
+      autoplayDuration={2500}
+    >
+      <img draggable="false" alt="hero 2" src={hero2} class=" w-full h-full" />
+      <img
+        draggable="false"
+        alt="hero 1"
+        src={hero1}
+        class=" w-full h-full -scale-x-[1.0]"
+      />
+      <img
+        draggable="false"
+        alt="hero 3"
+        src={hero4}
+        class=" w-full h-full brightness-75"
+      />
+    </Carousel>
+  </div>
 
-  <div
-    class="mt-40"
-  />
-
-  <div class="flex flex-col md:flex-row px-4 md:px-20 gap-8 md:gap-32">
+  <div class="flex z-10 flex-col md:flex-row px-4 md:px-20 gap-8 md:gap-32">
     <div class=" flex flex-col gap-12 w-full h-full justify-center leading">
       <h1 class="text-5xl md:text-7xl text-center md:text-start text-gray-300">
-        Bridging Finance and <br> Technology for <br> <strong class=" text-red-300"> Business Growth </strong>
+        Bridging Finance and <br /> Technology for <br />
+        <strong class=" text-red-300"> Business Growth </strong>
       </h1>
       <p class=" text-gray-300 text-center md:text-start">
         Seamless IT and Financial Solutions for Your Success. Navigate the
@@ -34,8 +51,6 @@
         <CTA className="w-48 h-12">Get Started</CTA>
       </div>
     </div>
-    <div>
-  </div>
-
+    <div />
   </div>
 </div>
