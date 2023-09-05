@@ -13,6 +13,7 @@
     "@sveltejs/adapter-auto": "^2.0.0",
     "@sveltejs/kit": "^1.20.4",
     "@tailwindcss/typography": "^0.5.9",
+    "@types/siema": "^1.4.8",
     "autoprefixer": "^10.4.15",
     "postcss": "^8.4.28",
     "svelte": "^4.0.5",
@@ -24,7 +25,7 @@
   },
   "type": "module",
   "dependencies": {
-    "svelte-carousel": "^1.0.25",
+    "siema": "^1.5.1",
     "svelte-icons": "^2.1.0"
   }
 }
