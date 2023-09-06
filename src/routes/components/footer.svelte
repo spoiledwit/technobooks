@@ -1,12 +1,11 @@
 <script>
-  import FaGoogle from "svelte-icons/fa/FaGoogle.svelte";
   import FaInstagram from "svelte-icons/fa/FaInstagram.svelte";
-  import FaTwitter from "svelte-icons/fa/FaTwitter.svelte";
   import FaFacebookF from "svelte-icons/fa/FaFacebookF.svelte";
 
   import financialNav from "../navs/financial-services.json";
   import technicalNav from "../navs/technical-services.json";
   import { toTitleCase } from "$lib/utils";
+    import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
 </script>
 
 <div
@@ -16,17 +15,15 @@
     class=" module w-full flex flex-col gap-12 bg-zinc-900 px-4 py-12 md:px-20 xl:px-40"
   >
     <div class=" flex w-full justify-center gap-6">
-      <a href="#" class=" w-5 aspect-square text-gray-300">
+      <a href="https://www.facebook.com/profile.php?id=61550876102941" target="_blank" class=" w-5 aspect-square text-gray-300">
         <FaFacebookF />
       </a>
-      <a href="#" class=" w-5 aspect-square text-gray-300">
-        <FaTwitter />
-      </a>
-      <a href="#" class=" w-5 aspect-square text-gray-300">
+      <a href="https://www.instagram.com/tbcgulf/" target="_blank" class=" w-5 aspect-square text-gray-300">
         <FaInstagram />
       </a>
-      <a href="#" class=" w-5 aspect-square text-gray-300">
-        <FaGoogle />
+    
+      <a href="https://www.linkedin.com/company/technobooks/?viewAsMember=true" target="_blank" class=" w-5 aspect-square text-gray-300">
+        <FaLinkedin />
       </a>
     </div>
     <div

@@ -3,6 +3,7 @@ import { toTitleCase } from "$lib/utils";
 
 export async function load({ params }) {
   const service = params.service;
+  //@ts-ignore
   const data = services[service];
   const category = data.category;
   return {
