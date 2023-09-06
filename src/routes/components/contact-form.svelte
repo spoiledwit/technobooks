@@ -101,7 +101,7 @@
           id="email"
           type="email"
           label="Your Email"
-          placeholder="example@example.com"
+          placeholder="name@example.com"
         >
           <img
             loading="lazy"

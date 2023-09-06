@@ -121,8 +121,10 @@
   <div
     class=" mt-20 relative gap-12 w-full grid place-items-center grid-cols-1 md:grid-cols-2 items-center lg:px-20 xl:px-40"
   >
-    <div class=" w-screen h-96 -top-8 left-1/2 absolute">
-      <h3 class=" text-bg text-white/20 w-min -translate-x-1/2">Technical</h3>
+    <div class=" w-screen h-96 -top-12 md:-top-8 left-1/2 absolute">
+      <h3 class=" text-7xl text-bg text-black/20 w-min -translate-x-1/2">
+        Technical
+      </h3>
     </div>
     {#each technicalServices as s (s.id)}
       <a
@@ -151,8 +153,10 @@
   <div
     class=" relative mt-20 gap-12 w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center"
   >
-    <div class=" w-screen h-96 -top-8 left-1/2 absolute">
-      <h3 class=" text-bg text-white/20 w-min -translate-x-1/2">Financial</h3>
+    <div class=" w-screen h-96 -top-12 md:-top-8 left-1/2 absolute">
+      <h3 class=" text-7xl text-bg text-black/20 w-min -translate-x-1/2">
+        Financial
+      </h3>
     </div>
     {#each financialServices as s (s.id)}
       <a
@@ -189,8 +193,10 @@
   .card > div > h3 {
     color: #9ca3af;
   }
-  .text-bg {
-    font-size: 120px;
-    line-height: 12px;
+  @media (min-width: 768px) {
+    .text-bg {
+      font-size: 120px;
+      line-height: 12px;
+    }
   }
 </style>

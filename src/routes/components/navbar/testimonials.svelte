@@ -49,7 +49,7 @@
         <div
           class=" flex flex-col-reverse md:flex-row gap-2 md:gap-8 items-center"
         >
-          <p class=" text-gray-400 w-full">{t.text}</p>
+          <p class=" text-primary-gray w-full">{t.text}</p>
         </div>
       </div>
     {/each}

@@ -37,7 +37,7 @@
 
 <div class=" w-full h-screen relative overflow-hidden pb-12 flex">
   <div class=" siema w-full absolute h-[90vh]">
-    <div class="  w-full h-[90vh] relative">
+    <div class=" bg-zinc-900 w-full h-[90vh] relative">
       <section
         class=" absolute z-10 w-full top-1/2 max-w-2xl -translate-y-1/2 md:left-20"
       >
@@ -81,7 +81,7 @@
         draggable="false"
         alt="hero 3"
         src={hero3}
-        class=" w-full translate-x-[15%] object-cover -scale-x-100 h-[90vh]"
+        class=" w-full md:translate-x-[15%] object-cover -scale-x-100 h-[90vh]"
       />
     </div>
     <div class=" overflow-hidden bg-black w-full h-[90vh] relative">
@@ -105,7 +105,7 @@
         draggable="false"
         alt="hero 1"
         src={hero1}
-        class=" translate-x-[15%] w-full object-cover h-[90vh]"
+        class=" translate-x-[50%] md:translate-x-[15%] w-full object-cover h-[90vh]"
       />
     </div>
   </div>
@@ -117,11 +117,11 @@
       <div
         class=" flex mb-20 md:mb-32 flex-col md:flex-row items-center gap-8 w-full"
       >
-        <input
-          class=" h-12 w-full md:w-96 bg-white/[0.03] ring-0 outline-0 focus:border-primary-red rounded-md px-4 border-[1px] border-gray-500 text-gray-50 placeholder:text-gray-500"
-          placeholder="Enter your email..."
-        />
-        <CTA className="w-48 h-12">Get Started</CTA>
+        <a
+          href="/contact"
+          class=" w-48 h-12 rounded-md flex items-center justify-center text-white font-bold bg-primary-red hover:bg-red-500 transition-all"
+          >Contact Us</a
+        >
       </div>
     </div>
     <div />

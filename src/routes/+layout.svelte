@@ -14,28 +14,25 @@
   <Footer />
 
   <div
-    class="fixed glass p-2 top-1/2 right-10 transform -translate-y-1/2 flex flex-col items-center space-y-4 z-50"
+    class="fixed hidden glass p-2 bg-white/50 top-1/2 right-10 transform -translate-y-1/2 md:flex flex-col items-center space-y-4 z-50"
   >
     <!-- Facebook -->
     <a
       href="https://www.facebook.com/profile.php?id=61550876102941"
       target="_blank"
-      class=" w-5 aspect-square text-gray-700"
+      class=" w-5 aspect-square text-black"
     >
       <FaFacebook />
     </a>
 
     <!-- Instagram -->
-    <a
-      href="https://www.instagram.com"
-      class=" w-5 aspect-square text-gray-700"
-    >
-      <FaInstagram size="32" color="#fff" />
+    <a href="https://www.instagram.com" class=" w-5 aspect-square text-black">
+      <FaInstagram />
     </a>
 
     <!-- LinkedIn -->
-    <a href="https://www.linkedin.com" class=" w-5 aspect-square text-gray-700">
-      <FaLinkedin size="32" color="#fff" />
+    <a href="https://www.linkedin.com" class=" w-5 aspect-square text-black">
+      <FaLinkedin />
     </a>
   </div>
 </div>

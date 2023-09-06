@@ -28,11 +28,11 @@
   }
 </script>
 
-<div class=" md:hidden mt-4 w-min z-[60] flex justify-end">
+<div class=" md:hidden w-min z-[60] flex justify-end">
   {#if isMobileNavOpen}
     <div
       transition:fly={{ y: 32, duration: 120 }}
-      class=" w-screen pt-20 px-4 h-screen bg-zinc-100 text-white absolute overflow-y-scroll top-0 left-0 gap-8"
+      class=" w-screen pt-20 px-4 h-screen bg-zinc-100 border-b border-gray-400 text-white absolute overflow-y-scroll top-0 left-0 gap-8"
     >
       <ul class=" flex flex-col">
         <li>
@@ -44,6 +44,8 @@
             Home
           </a>
         </li>
+
+        <!-- Financial services -->
         <li>
           {#each Object.entries(financeNav) as e, index}
             <Accordion
@@ -59,7 +61,7 @@
               <div slot="content" class=" flex flex-col">
                 {#each e[1] as service}
                   <a
-                    class=" text-gray-400 py-[2px]"
+                    class=" text-primary-gray py-[2px]"
                     href={`/services/${service}`}
                     on:click={closeDialog}>{toTitleCase(service)}</a
                   >
@@ -68,53 +70,43 @@
             </Accordion>
           {/each}
         </li>
+
+        <!-- IT services -->
         <li>
-          {#each Object.entries(techNav) as e, i}
-            {@const index = i + Object.keys(financeNav).length}
-            <Accordion
-              open={accordionIndex === index}
-              onClick={() => handleClick(index)}
-            >
-              <h3
-                class=" py-[6px] tracking-wider text-lg text-gray-700"
-                slot="head"
-              >
-                {toTitleCase(e[0])}
+          {#each Object.entries(techNav) as e}
+            <a
+              class=" text-primary-gray py-[2px]"
+              href={`/services/${e[0]}`}
+              on:click={closeDialog}
+              ><h3 class=" py-[6px] tracking-wider text-lg text-gray-700">
+                {e[1]}
               </h3>
-              <div slot="content" class=" flex flex-col">
-                {#each e[1] as service}
-                  <a
-                    class=" text-gray-400 py-[2px]"
-                    href={`/services/${service}`}
-                    on:click={closeDialog}>{toTitleCase(service)}</a
-                  >
-                {/each}
-              </div>
-            </Accordion>
+            </a>
           {/each}
         </li>
-        <li>
+
+        <li class=" mt-[2px]">
           <a
             on:click={closeDialog}
-            class=" py-[6px] tracking-wider text-lg text-gray-700"
+            class=" tracking-wider text-lg text-gray-700"
             href="/about"
           >
             About
           </a>
         </li>
-        <li>
+        <li class=" mt-2">
           <a
             on:click={closeDialog}
-            class=" py-[6px] tracking-wider text-lg text-gray-700"
+            class=" tracking-wider text-lg text-gray-700"
             href="/privacy-policy"
           >
             Privacy
           </a>
         </li>
-        <li>
+        <li class=" mt-2">
           <a
             on:click={closeDialog}
-            class=" py-[6px] tracking-wider text-lg text-gray-700"
+            class=" tracking-wider text-lg text-gray-700"
             href="/contact"
           >
             Contact
@@ -123,14 +115,15 @@
       </ul>
     </div>
   {/if}
-  <button
-    on:click={toggleMobileNav}
-    class="absolute right-4 p-1 w-9 text-gray-400"
-  >
+  <button on:click={toggleMobileNav} class="fixed right-4 top-4 p-1 w-9">
     {#if isMobileNavOpen}
-      <MdClose />
+      <p class="text-primary-gray">
+        <MdClose />
+      </p>
     {:else}
-      <MdDragHandle />
+      <p class=" text-gray-500">
+        <MdDragHandle />
+      </p>
     {/if}
   </button>
 </div>

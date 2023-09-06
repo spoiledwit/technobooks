@@ -13,7 +13,7 @@
     <div class=" mr-1">
       <slot name="head" />
     </div>
-    <div class=" w-5 aspect-square">
+    <div class=" w-5 text-primary-gray aspect-square">
       {#if open}
         <MdKeyboardArrowUp />
       {:else}
