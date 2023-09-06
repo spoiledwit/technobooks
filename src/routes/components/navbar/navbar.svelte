@@ -2,6 +2,7 @@
   import CTA from "../cta.svelte";
   import DesktopNav from "./desktop-nav.svelte";
   import MobileNav from "./mobile-nav.svelte";
+  import logo from "../../../assets/logo.png";
 </script>
 
 <nav
@@ -12,7 +13,8 @@
     <h1
       class=" w-[272px] text-3xl text-gray-300 whitespace-nowrap font-bold tracking-tight"
     >
-      TechnoBooks
+      <img src={logo} alt="logo" class=" w-[90px] inline-block mr-2" />
+      <span class=" text-red-300">Techno</span>Books
     </h1>
   </a>
 
