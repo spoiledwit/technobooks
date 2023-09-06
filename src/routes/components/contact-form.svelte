@@ -42,6 +42,12 @@
         </div>
         <p class=" text-gray-300 font-bold">+971 521508056</p>
       </div>
+      <div class=" w-full gap-4 flex items-center">
+        <div class=" w-8 text-gray-300">
+          <MdPhone />
+        </div>
+        <p class=" text-gray-300 font-bold">+971 547802470</p>
+      </div>
       <a href="/" class=" w-full gap-4 flex items-center">
         <div class=" w-8 text-gray-300">
           <DiWebplatform />
