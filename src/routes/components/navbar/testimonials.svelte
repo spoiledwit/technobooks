@@ -1,6 +1,7 @@
 <script lang="ts">
   import client1 from "../../../assets/img/client1.webp";
   import client2 from "../../../assets/img/client2.webp";
+  import Heading from "../heading.svelte";
 
   const testimonials = [
     {
@@ -25,11 +26,7 @@
 </script>
 
 <div class=" flex flex-col gap-12">
-  <h2
-    class=" text-5xl md:text-7xl text-center font-serif text-primary-red self-center"
-  >
-    Hear From Our Clients
-  </h2>
+  <Heading className=" self-center">Hear From Our Clients</Heading>
   <div class=" flex flex-col gap-8 px-4 md:px-20 lg:px-40 xl:px-60">
     {#each testimonials as t}
       <div

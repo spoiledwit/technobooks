@@ -9,6 +9,7 @@
   import MdLocationOn from "svelte-icons/md/MdLocationOn.svelte";
   import DiWebplatform from "svelte-icons/di/DiWebplatform.svelte";
   import MdEmail from "svelte-icons/md/MdEmail.svelte";
+  import Heading from "./heading.svelte";
   export let className: string = "";
 </script>
 
@@ -17,11 +18,7 @@
   class={" w-full flex flex-col pt-12 items-center gap-20 md:px-32 xl:px-64 px-4 " +
     className}
 >
-  <h2
-    class=" w-full text-5xl md:text-7xl font-serif text-center text-primary-red tracking-tight"
-  >
-    Get In Touch With Us!
-  </h2>
+  <Heading>Get In Touch With Us!</Heading>
 
   <div class=" flex flex-col md:flex-row w-full gap-12">
     <div class="w-full gap-4 flex flex-col">
