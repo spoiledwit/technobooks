@@ -9,6 +9,7 @@
   import MdLocationOn from "svelte-icons/md/MdLocationOn.svelte";
   import DiWebplatform from "svelte-icons/di/DiWebplatform.svelte";
   import MdEmail from "svelte-icons/md/MdEmail.svelte";
+  import Heading from "./heading.svelte";
   export let className: string = "";
 </script>
 
@@ -17,18 +18,14 @@
   class={" w-full flex flex-col pt-12 items-center gap-20 md:px-32 xl:px-64 px-4 " +
     className}
 >
-  <h2
-    class=" w-full text-5xl md:text-7xl font-serif text-center text-red-200 tracking-tight"
-  >
-    Get In Touch With Us!
-  </h2>
+  <Heading>Get In Touch With Us!</Heading>
 
   <div class=" flex flex-col md:flex-row w-full gap-12">
     <div class="w-full gap-4 flex flex-col">
-      <h3 class=" text-gray-300 text-xl font-bold tracking-tight">
+      <h3 class=" text-gray-700 text-xl font-bold tracking-tight">
         Contact Us
       </h3>
-      <p class=" text-gray-400 text-sm">
+      <p class=" text-gray-600 text-sm">
         It is our pleasure to serve you and your company on both; short & long
         term business relationship contact. We provide IT services for new
         customer and our existed clients. And our client's satisfaction is our
@@ -37,28 +34,28 @@
       </p>
       <div class="h-full" />
       <div class=" w-full gap-4 flex items-center">
-        <div class=" w-8 text-gray-300">
+        <div class=" w-8 text-gray-700">
           <MdPhone />
         </div>
-        <p class=" text-gray-300 font-bold">+971 521508056</p>
+        <p class=" text-gray-700 font-bold">+971 521508056</p>
       </div>
       <div class=" w-full gap-4 flex items-center">
-        <div class=" w-8 text-gray-300">
+        <div class=" w-8 text-gray-700">
           <MdPhone />
         </div>
-        <p class=" text-gray-300 font-bold">+971 547802470</p>
+        <p class=" text-gray-700 font-bold">+971 547802470</p>
       </div>
       <a href="/" class=" w-full gap-4 flex items-center">
-        <div class=" w-8 text-gray-300">
+        <div class=" w-8 text-gray-700">
           <DiWebplatform />
         </div>
-        <p class=" text-gray-300 font-bold">www.tbcgulf.com</p>
+        <p class=" text-gray-700 font-bold">www.tbcgulf.com</p>
       </a>
       <div class=" w-full gap-4 flex items-center">
-        <div class=" w-8 text-gray-300">
+        <div class=" w-8 text-gray-700">
           <MdLocationOn />
         </div>
-        <p class=" text-gray-300 font-bold">
+        <p class=" text-gray-700 font-bold">
           IFZA, Silicon Oasis, DDP, Building A1, Dubai, UAE
         </p>
       </div>
@@ -66,10 +63,10 @@
         href="mailto:info@technobooks.com"
         class=" w-full gap-4 flex items-center"
       >
-        <div class=" w-8 text-gray-300">
+        <div class=" w-8 text-gray-700">
           <MdEmail />
         </div>
-        <p class=" text-gray-300 font-bold">info@tbcgulf.com</p>
+        <p class=" text-gray-700 font-bold">info@tbcgulf.com</p>
       </a>
       <div class="h-full" />
     </div>
@@ -101,7 +98,7 @@
           id="email"
           type="email"
           label="Your Email"
-          placeholder="example@example.com"
+          placeholder="name@example.com"
         >
           <img
             loading="lazy"

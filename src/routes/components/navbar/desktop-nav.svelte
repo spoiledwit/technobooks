@@ -27,8 +27,10 @@
 <Card
   className=" hidden md:block py-2 w-[calc(100%-32px)] md:w-min md:mx-0 fixed top-4 left-1/2 z-[9999] -translate-x-1/2 px-8"
 >
-  <ul class=" flex w-full md:w-min justify-between md:gap-12 text-gray-300">
-    <li class=" hover:text-red-400 transition-all cursor-pointer">
+  <ul
+    class=" flex text-lg w-full md:w-min justify-between md:gap-12 text-gray-700"
+  >
+    <li class=" hover:text-primary-red transition-all cursor-pointer">
       <a href="/">Home</a>
     </li>
     <li
@@ -39,7 +41,7 @@
       <button
         on:click={() => handleClick(0)}
         class={`${
-          currentDialog === 0 ? "text-red-400" : ""
+          currentDialog === 0 ? "text-primary-red" : ""
         } flex gap-1 items-center transition-all cursor-pointer`}
       >
         <p>Finance</p>
@@ -57,23 +59,23 @@
       <button
         on:click={() => handleClick(1)}
         class={`${
-          currentDialog === 1 ? "text-red-400" : ""
+          currentDialog === 1 ? "text-primary-red" : ""
         } flex gap-1 items-center transition-all cursor-pointer`}
       >
-        <p>Tech</p>
+        <p class="pl-2">IT</p>
         <div class={`${currentDialog === 1 ? " rotate-180" : ""} w-3`}>
           <MdKeyboardArrowDown />
         </div>
       </button>
       <TechnicalServicesDialog open={currentDialog === 1} />
     </li>
-    <li class=" hover:text-red-400 transition-all cursor-pointer">
+    <li class=" hover:text-primary-red transition-all cursor-pointer">
       <a href="/about">About</a>
     </li>
-    <li class=" hover:text-red-400 transition-all cursor-pointer">
+    <li class=" hover:text-primary-red transition-all cursor-pointer">
       <a href="/privacy-policy">Privacy</a>
     </li>
-    <li class=" hover:text-red-400 transition-all cursor-pointer">
+    <li class=" hover:text-primary-red transition-all cursor-pointer">
       <a href="/contact">Contact</a>
     </li>
   </ul>

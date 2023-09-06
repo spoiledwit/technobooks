@@ -14,17 +14,17 @@
     class=" absolute left-0 -translate-x-[40%]"
   >
     <div
-      class=" flex gap-8 mt-4 border-[1px] border-zinc-700 bg-zinc-900 rounded-md shadow-2xl shadow-black/70 px-4 py-8"
+      class=" flex gap-8 mt-4 border-2 border-zinc-400 bg-zinc-100 rounded-md shadow-2xl shadow-black/30 px-4 py-8"
     >
       {#each Object.entries(nav) as [path, name]}
         <div class=" flex flex-col gap-2">
-          <p class=" text-gray-300 font-bold text-sm whitespace-nowrap">
+          <p class=" text-gray-700 font-bold text-base whitespace-nowrap">
             {name}
           </p>
           <a
             on:click={() => (open = false)}
             href={`/services/${path}`}
-            class=" text-sm text-gray-400 hover:text-gray-200 transition-all"
+            class=" text-base text-gray-600 hover:text-black transition-all"
           >
             {name}
           </a>
