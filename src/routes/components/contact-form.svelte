@@ -18,17 +18,17 @@
     className}
 >
   <h2
-    class=" w-full text-5xl md:text-7xl font-serif text-center text-red-200 tracking-tight"
+    class=" w-full text-5xl md:text-7xl font-serif text-center text-primary-red tracking-tight"
   >
     Get In Touch With Us!
   </h2>
 
   <div class=" flex flex-col md:flex-row w-full gap-12">
     <div class="w-full gap-4 flex flex-col">
-      <h3 class=" text-gray-300 text-xl font-bold tracking-tight">
+      <h3 class=" text-gray-700 text-xl font-bold tracking-tight">
         Contact Us
       </h3>
-      <p class=" text-gray-400 text-sm">
+      <p class=" text-gray-600 text-sm">
         It is our pleasure to serve you and your company on both; short & long
         term business relationship contact. We provide IT services for new
         customer and our existed clients. And our client's satisfaction is our
@@ -37,28 +37,28 @@
       </p>
       <div class="h-full" />
       <div class=" w-full gap-4 flex items-center">
-        <div class=" w-8 text-gray-300">
+        <div class=" w-8 text-gray-700">
           <MdPhone />
         </div>
-        <p class=" text-gray-300 font-bold">+971 521508056</p>
+        <p class=" text-gray-700 font-bold">+971 521508056</p>
       </div>
       <div class=" w-full gap-4 flex items-center">
-        <div class=" w-8 text-gray-300">
+        <div class=" w-8 text-gray-700">
           <MdPhone />
         </div>
-        <p class=" text-gray-300 font-bold">+971 547802470</p>
+        <p class=" text-gray-700 font-bold">+971 547802470</p>
       </div>
       <a href="/" class=" w-full gap-4 flex items-center">
-        <div class=" w-8 text-gray-300">
+        <div class=" w-8 text-gray-700">
           <DiWebplatform />
         </div>
-        <p class=" text-gray-300 font-bold">www.tbcgulf.com</p>
+        <p class=" text-gray-700 font-bold">www.tbcgulf.com</p>
       </a>
       <div class=" w-full gap-4 flex items-center">
-        <div class=" w-8 text-gray-300">
+        <div class=" w-8 text-gray-700">
           <MdLocationOn />
         </div>
-        <p class=" text-gray-300 font-bold">
+        <p class=" text-gray-700 font-bold">
           IFZA, Silicon Oasis, DDP, Building A1, Dubai, UAE
         </p>
       </div>
@@ -66,10 +66,10 @@
         href="mailto:info@technobooks.com"
         class=" w-full gap-4 flex items-center"
       >
-        <div class=" w-8 text-gray-300">
+        <div class=" w-8 text-gray-700">
           <MdEmail />
         </div>
-        <p class=" text-gray-300 font-bold">info@tbcgulf.com</p>
+        <p class=" text-gray-700 font-bold">info@tbcgulf.com</p>
       </a>
       <div class="h-full" />
     </div>

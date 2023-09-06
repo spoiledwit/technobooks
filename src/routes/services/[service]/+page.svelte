@@ -78,7 +78,7 @@
   <div
     class=" relative w-full md:px-20 h-[50vh] md:h-[80vh] flex justify-center items-center"
   >
-    <div class=" w-full h-full z-10 absolute opacity-20">
+    <div class=" w-full h-full z-10 absolute opacity-30">
       <img
         alt="hero beam background"
         src={beam}
@@ -87,7 +87,7 @@
     </div>
 
     <div
-      class=" z-40 h-full aspect-[1920/1200] bg-[rgba(31,31,33,0.75)] flex items-center justify-center md:rounded-3xl overflow-hidden"
+      class=" z-40 h-full aspect-[1920/1200] bg-gray-200/60 flex items-center justify-center md:rounded-3xl overflow-hidden"
     >
       <img
         loading="lazy"
@@ -102,17 +102,17 @@
     />
   </div>
   <h1
-    class=" text-4xl mt-8 self-center md:text-5xl mx-2 mb-12 text-center max-w-3xl text-gray-300 tracking-tight"
+    class=" text-4xl mt-8 self-center md:text-5xl mx-2 mb-12 text-center max-w-3xl text-gray-700 tracking-tight"
   >
     {title}
   </h1>
 
   <section
-    class=" relative overflow-x-hidden flex-col flex prose prose-headings:text-gray-200 prose-strong:text-gray-200 font-normal text-gray-300 px-4 md:px-28 lg:px-64 xl:px-96 min-w-full mb-20"
+    class=" relative overflow-x-hidden flex-col flex prose prose-headings:text-gray-900 prose-strong:text-gray-900 font-normal text-gray-700 px-4 md:px-28 lg:px-64 xl:px-96 min-w-full mb-20"
   >
     <div class=" overflow-hidden w-screen h-full">
       <div
-        class=" opacity-25 rotate-[10deg] w-screen h-12 md:h-20 scale-x-150 absolute -right-8 top-2/3 bg-red-500 blur-3xl"
+        class="rotate-[10deg] w-screen h-20 md:h-32 scale-x-150 absolute -right-8 top-2/3 blur-3xl bg-gradient-to-r from-primary-red to-transparent opacity-30"
       />
     </div>
 

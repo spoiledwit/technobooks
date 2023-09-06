@@ -11,10 +11,10 @@
   <!-- LOGO -->
   <a href="/" class=" hidden md:block">
     <h1
-      class=" w-[272px] text-3xl text-gray-300 whitespace-nowrap font-bold tracking-tight"
+      class=" w-[272px] text-3xl text-primary-gray whitespace-nowrap font-bold tracking-tight"
     >
       <img src={logo} alt="logo" class=" w-[90px] inline-block mr-2" />
-      <span class=" text-red-300">Techno</span>Books
+      <span class=" text-primary-red">Technobooks</span> Consultants
     </h1>
   </a>
 
@@ -26,7 +26,7 @@
   <div class=" hidden md:block">
     <div class=" h-10 flex gap-4">
       <button
-        class=" w-32 h-full hover:bg-red-300/25 rounded-md flex items-center justify-center text-gray-300 font-bold cursor-pointer transition-all"
+        class=" w-32 h-full hover:bg-primary-red/25 rounded-md flex items-center justify-center text-gray-700 font-bold cursor-pointer transition-all"
         >Log In</button
       >
       <CTA className=" w-32">Sign up</CTA>

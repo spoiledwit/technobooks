@@ -1,15 +1,14 @@
-<script>
+<script lang="ts">
   import CTA from "../cta.svelte";
 
-  import hero1 from "../../../assets/img/home-hero-1.webp";
+  import hero1 from "../../../assets/img/home-hero-1.jpg";
   import hero2 from "../../../assets/img/home-hero-2.webp";
-  import hero4 from "../../../assets/img/home-hero-4.jpg";
-  import hero5 from "../../../assets/img/home-hero-5.jpg";
+  import hero3 from "../../../assets/img/home-hero-3.jpg";
   import { onMount } from "svelte";
 
   import Siema from "siema";
 
-  let slider;
+  let slider: Siema;
   onMount(() => {
     slider = new Siema({
       selector: ".siema",
@@ -28,7 +27,7 @@
 
     const interval = setInterval(() => {
       slider.next();
-    }, 2500);
+    }, 3000);
 
     return () => {
       clearInterval(interval);
@@ -40,70 +39,73 @@
   <div class=" siema w-full absolute h-[90vh]">
     <div class="  w-full h-[90vh] relative">
       <section
-        class=" z-10 absolute w-full top-1/2 max-w-2xl -translate-y-1/2 md:left-20"
-      >
-        <h1
-          class="text-5xl md:text-7xl text-center md:text-start text-gray-300"
-        >
-          Empowering Your Digital
-          <strong class=" text-red-300"> Potential </strong>
-        </h1>
-        <p class=" text-gray-300 text-center mt-4 md:text-start">
-          Unlock Comprehensive IT Solutions for Seamless Success in the Digital
-          Age. Your Trusted Partner in Navigating the Ever-Evolving IT
-          Landscape.
-        </p>
-      </section>
-      <img
-        draggable="false"
-        alt="hero 2"
-        src={hero2}
-        class=" w-full object-cover h-[90vh]"
-      />
-    </div>
-    <div class="  w-full h-[90vh] relative">
-      <section
         class=" absolute z-10 w-full top-1/2 max-w-2xl -translate-y-1/2 md:left-20"
       >
         <h1
-          class="text-5xl md:text-7xl text-center md:text-start text-gray-300"
+          class="text-5xl md:text-7xl text-center md:text-start tracking-tight text-gray-50"
         >
           Elevate Your Tech, Elevate Your
-          <strong class=" text-red-300"> Business </strong>
+          <strong class=" text-primary-red"> Business </strong>
         </h1>
-        <p class=" text-gray-300 text-center mt-4 md:text-start">
+        <p class=" text-gray-50 text-center mt-4 md:text-start">
           Your Trusted Partner in Delivering Complete IT Excellence: Tailored
           Solutions, Unparalleled Support, and Technological Innovation.
         </p>
       </section>
       <img
+        loading="lazy"
         draggable="false"
-        alt="hero 1"
-        src={hero1}
-        class=" w-full object-cover h-[90vh] -scale-x-[1.0]"
+        alt="hero 2"
+        src={hero2}
+        class=" w-full hue-rotate-[140deg] object-cover h-[90vh]"
       />
     </div>
-    <div class="  w-full h-[90vh] relative">
+    <div class="  w-full h-[90vh] relative overflow-hidden bg-black">
       <section
         class=" absolute z-10 w-full top-1/2 max-w-2xl -translate-y-1/2 md:left-20"
       >
         <h1
-          class="text-5xl md:text-7xl text-center md:text-start text-gray-300"
+          class="text-5xl md:text-7xl text-center md:text-start tracking-tight text-gray-50"
         >
           Bridging Finance and Technology for
-          <strong class=" text-red-300"> Business Growth </strong>
+          <strong class=" text-primary-red"> Business Growth </strong>
         </h1>
-        <p class=" text-gray-300 text-center mt-4 md:text-start">
+        <p class=" text-gray-50 text-center mt-4 md:text-start">
           Seamless IT and Financial Solutions for Your Success. Navigate the
           Future with Confidence.
         </p>
       </section>
 
       <img
+        loading="lazy"
         draggable="false"
         alt="hero 3"
-        src={hero5}
-        class=" w-full object-cover -scale-x-100 h-[90vh]"
+        src={hero3}
+        class=" w-full translate-x-[15%] object-cover -scale-x-100 h-[90vh]"
+      />
+    </div>
+    <div class=" overflow-hidden bg-black w-full h-[90vh] relative">
+      <section
+        class=" z-10 absolute w-full top-1/2 max-w-2xl -translate-y-1/2 md:left-20"
+      >
+        <h1
+          class="text-5xl md:text-7xl text-center md:text-start tracking-tight text-gray-50"
+        >
+          Empowering Your Digital
+          <strong class=" text-primary-red"> Potential </strong>
+        </h1>
+        <p class=" text-gray-50 text-center mt-4 md:text-start">
+          Unlock Comprehensive IT Solutions for Seamless Success in the Digital
+          Age. Your Trusted Partner in Navigating the Ever-Evolving IT
+          Landscape.
+        </p>
+      </section>
+      <img
+        loading="eager"
+        draggable="false"
+        alt="hero 1"
+        src={hero1}
+        class=" translate-x-[15%] w-full object-cover h-[90vh]"
       />
     </div>
   </div>
@@ -116,7 +118,7 @@
         class=" flex mb-20 md:mb-32 flex-col md:flex-row items-center gap-8 w-full"
       >
         <input
-          class=" h-12 w-full md:w-96 bg-white/[0.03] ring-0 outline-0 focus:border-red-500 rounded-md px-4 border-[1px] border-gray-500 text-gray-300 placeholder:text-gray-500"
+          class=" h-12 w-full md:w-96 bg-white/[0.03] ring-0 outline-0 focus:border-primary-red rounded-md px-4 border-[1px] border-gray-500 text-gray-50 placeholder:text-gray-500"
           placeholder="Enter your email..."
         />
         <CTA className="w-48 h-12">Get Started</CTA>

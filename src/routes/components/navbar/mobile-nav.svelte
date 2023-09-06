@@ -32,13 +32,13 @@
   {#if isMobileNavOpen}
     <div
       transition:fly={{ y: 32, duration: 120 }}
-      class=" w-screen pt-20 px-4 h-screen bg-zinc-900 text-white absolute overflow-y-scroll top-0 left-0 gap-8"
+      class=" w-screen pt-20 px-4 h-screen bg-zinc-100 text-white absolute overflow-y-scroll top-0 left-0 gap-8"
     >
       <ul class=" flex flex-col">
         <li>
           <a
             on:click={closeDialog}
-            class=" py-[6px] tracking-wider text-lg text-gray-300"
+            class=" py-[6px] tracking-wider text-lg text-gray-700"
             href="/"
           >
             Home
@@ -51,7 +51,7 @@
               onClick={() => handleClick(index)}
             >
               <h3
-                class=" py-[6px] tracking-wider text-lg text-gray-300"
+                class=" py-[6px] tracking-wider text-lg text-gray-700"
                 slot="head"
               >
                 {toTitleCase(e[0])}
@@ -76,7 +76,7 @@
               onClick={() => handleClick(index)}
             >
               <h3
-                class=" py-[6px] tracking-wider text-lg text-gray-300"
+                class=" py-[6px] tracking-wider text-lg text-gray-700"
                 slot="head"
               >
                 {toTitleCase(e[0])}
@@ -96,7 +96,7 @@
         <li>
           <a
             on:click={closeDialog}
-            class=" py-[6px] tracking-wider text-lg text-gray-300"
+            class=" py-[6px] tracking-wider text-lg text-gray-700"
             href="/about"
           >
             About
@@ -105,7 +105,7 @@
         <li>
           <a
             on:click={closeDialog}
-            class=" py-[6px] tracking-wider text-lg text-gray-300"
+            class=" py-[6px] tracking-wider text-lg text-gray-700"
             href="/privacy-policy"
           >
             Privacy
@@ -114,7 +114,7 @@
         <li>
           <a
             on:click={closeDialog}
-            class=" py-[6px] tracking-wider text-lg text-gray-300"
+            class=" py-[6px] tracking-wider text-lg text-gray-700"
             href="/contact"
           >
             Contact

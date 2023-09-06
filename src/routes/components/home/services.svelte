@@ -39,7 +39,6 @@
       content:
         "Our skilled app development team possesses a deep understanding of the latest mobile technologies and platforms.",
     },
-      
   ];
   const financialServices = [
     {
@@ -115,12 +114,12 @@
 <div
   class=" flex flex-col overflow-x-hidden gap-12 items-center w-full px-4 md:px-20 lg:px-40 xl:px-60"
 >
-  <h2 class=" text-5xl md:text-7xl font-serif text-red-200 text-center">
+  <h2 class=" text-5xl md:text-7xl font-serif text-primary-red text-center">
     Services We Provide
   </h2>
 
   <div
-    class=" mt-20 relative gap-12 w-full grid grid-cols-1 md:grid-cols-2 items-center lg:px-20 xl:px-40"
+    class=" mt-20 relative gap-12 w-full grid place-items-center grid-cols-1 md:grid-cols-2 items-center lg:px-20 xl:px-40"
   >
     <div class=" w-screen h-96 -top-8 left-1/2 absolute">
       <h3 class=" text-bg text-white/20 w-min -translate-x-1/2">Technical</h3>
@@ -128,9 +127,9 @@
     {#each technicalServices as s (s.id)}
       <a
         href={`/services/${s.href}`}
-        class=" z-10 card bg-gradient-radial text-gray-500 from-gray-400 hover:from-red-500 to-transparent h-full p-[2px] transition-all"
+        class=" z-10 w-full card bg-gradient-radial text-gray-500 from-gray-400 hover:from-primary-red to-transparent h-full p-[2px] transition-all"
       >
-        <div class=" rounded-xl h-full bg-zinc-900 flex flex-col p-4 gap-4">
+        <div class=" rounded-xl h-full bg-zinc-100 flex flex-col p-4 gap-4">
           <div class=" w-20 aspect-square">
             <svelte:component this={getIcon(s.id)} />
           </div>
@@ -140,7 +139,7 @@
           <h3 class=" transition-all font-bold tracking-tight text-xl">
             {s.head}
           </h3>
-          <p class=" text-sm transition-all">
+          <p class=" text-sm text-primary-gray transition-all">
             {s.content}
           </p>
           <div class=" h-full" />
@@ -158,9 +157,9 @@
     {#each financialServices as s (s.id)}
       <a
         href={`/services/${s.href}`}
-        class=" card z-10 bg-gradient-radial text-gray-500 from-gray-400 hover:from-red-500 to-transparent h-full p-[2px] transition-all"
+        class=" card z-10 bg-gradient-radial text-gray-500 from-primary-gray hover:from-red-600 to-transparent h-full p-[2px] transition-all"
       >
-        <div class=" rounded-xl h-full bg-zinc-900 flex flex-col p-4 gap-4">
+        <div class=" rounded-xl h-full bg-zinc-100 flex flex-col p-4 gap-4">
           <div class=" w-20 aspect-square">
             <svelte:component this={getIcon(s.id)} />
           </div>
@@ -170,7 +169,7 @@
           <h3 class=" transition-all font-bold tracking-tight text-xl">
             {s.head}
           </h3>
-          <p class=" text-sm transition-all">
+          <p class=" text-sm text-primary-gray transition-all">
             {s.content}
           </p>
           <div class=" h-full" />
@@ -181,14 +180,11 @@
 </div>
 
 <style>
-  .card:hover > div > p {
-    color: #9ca3af;
-  }
   .card:hover {
     color: #ef4444;
   }
   .card:hover > div > h3 {
-    color: #d1d5db;
+    color: #727272;
   }
   .card > div > h3 {
     color: #9ca3af;

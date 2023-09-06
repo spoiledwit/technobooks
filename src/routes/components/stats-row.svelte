@@ -1,5 +1,5 @@
 <div class=" flex gap-4 w-full h-10">
-  <div class=" w-10 aspect-square rounded-md text-zinc-400 p-2 bg-zinc-800">
+  <div class=" w-10 aspect-square rounded-md text-zinc-400 p-2 bg-zinc-200">
     <slot />
   </div>
 

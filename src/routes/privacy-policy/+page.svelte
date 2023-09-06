@@ -12,9 +12,9 @@
 </div>
 
 <article
-  class=" flex flex-col text-gray-300 text-justify gap-4 pt-10 pb-20 w-full px-4 md:px-28 lg:px-60 xl:px-96"
+  class=" flex flex-col text-gray-700 text-justify gap-4 pt-10 pb-20 w-full px-4 md:px-28 lg:px-60 xl:px-96"
 >
-  <h1 class=" text-5xl mb-4 text-center text-gray-300" id="privacy-agreement">
+  <h1 class=" text-5xl mb-4 text-center text-gray-700" id="privacy-agreement">
     PRIVACY AGREEMENT
   </h1>
   <p class=" md:text-sm">

@@ -5,24 +5,36 @@
   import financialNav from "../navs/financial-services.json";
   import technicalNav from "../navs/technical-services.json";
   import { toTitleCase } from "$lib/utils";
-    import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
+  import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
 </script>
 
 <div
-  class=" pt-[1px] bg-gradient-to-r from-transparent via-red-500 to-transparent"
+  class=" pt-[1px] bg-gradient-to-r from-transparent via-primary-red to-transparent"
 >
   <div
-    class=" module w-full flex flex-col gap-12 bg-zinc-900 px-4 py-12 md:px-20 xl:px-40"
+    class=" module w-full flex flex-col gap-12 bg-zinc-100 px-4 py-12 md:px-20 xl:px-40"
   >
     <div class=" flex w-full justify-center gap-6">
-      <a href="https://www.facebook.com/profile.php?id=61550876102941" target="_blank" class=" w-5 aspect-square text-gray-300">
+      <a
+        href="https://www.facebook.com/profile.php?id=61550876102941"
+        target="_blank"
+        class=" w-5 aspect-square text-gray-700"
+      >
         <FaFacebookF />
       </a>
-      <a href="https://www.instagram.com/tbcgulf/" target="_blank" class=" w-5 aspect-square text-gray-300">
+      <a
+        href="https://www.instagram.com/tbcgulf/"
+        target="_blank"
+        class=" w-5 aspect-square text-gray-700"
+      >
         <FaInstagram />
       </a>
-    
-      <a href="https://www.linkedin.com/company/technobooks/?viewAsMember=true" target="_blank" class=" w-5 aspect-square text-gray-300">
+
+      <a
+        href="https://www.linkedin.com/company/technobooks/?viewAsMember=true"
+        target="_blank"
+        class=" w-5 aspect-square text-gray-700"
+      >
         <FaLinkedin />
       </a>
     </div>
@@ -31,13 +43,13 @@
     >
       {#each Object.entries(financialNav) as e}
         <div class=" flex flex-col gap-2">
-          <p class=" text-gray-300 font-bold text-sm whitespace-nowrap">
+          <p class=" text-gray-700 font-bold text-sm whitespace-nowrap">
             {toTitleCase(e[0])}
           </p>
           {#each e[1] as service}
             <a
               href={`/services/${service}`}
-              class=" text-sm text-gray-400 hover:text-gray-200 transition-all"
+              class=" text-sm text-gray-600 hover:text-black transition-all"
             >
               {toTitleCase(service)}
             </a>
@@ -45,14 +57,14 @@
         </div>
       {/each}
       <div class=" flex flex-col gap-2">
-        <p class=" text-gray-300 font-bold text-sm whitespace-nowrap">
+        <p class=" text-gray-700 font-bold text-sm whitespace-nowrap">
           Technical
         </p>
         {#each Object.entries(technicalNav) as [path, name]}
           <div class=" flex flex-col gap-2">
             <a
               href={`/services/${path}`}
-              class=" text-sm text-gray-400 hover:text-gray-200 transition-all"
+              class=" text-sm text-gray-600 hover:text-black transition-all"
             >
               {name}
             </a>
@@ -60,19 +72,19 @@
         {/each}
       </div>
       <div class=" flex flex-col gap-2">
-        <p class=" text-gray-300 font-bold text-sm whitespace-nowrap">
+        <p class=" text-gray-700 font-bold text-sm whitespace-nowrap">
           Useful Links
         </p>
         <div class=" flex flex-col gap-2">
           <a
             href={`/about`}
-            class=" text-sm text-gray-400 hover:text-gray-200 transition-all"
+            class=" text-sm text-gray-600 hover:text-black transition-all"
           >
             About Us
           </a>
           <a
             href={`/privacy-policy`}
-            class=" text-sm text-gray-400 hover:text-gray-200 transition-all"
+            class=" text-sm text-gray-600 hover:text-black transition-all"
           >
             Privacy
           </a>

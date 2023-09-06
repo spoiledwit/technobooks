@@ -26,7 +26,7 @@
 
 <div class=" flex flex-col gap-12">
   <h2
-    class=" text-5xl md:text-7xl text-center font-serif text-red-200 self-center"
+    class=" text-5xl md:text-7xl text-center font-serif text-primary-red self-center"
   >
     Hear From Our Clients
   </h2>
@@ -42,7 +42,7 @@
             src={t.image}
             class=" w-24 md:w-32 rounded-full aspect-square object-cover object-center"
           />
-          <h4 class=" text-xl md:w-96 text-gray-300 tracking-tight">
+          <h4 class=" text-xl md:w-96 text-gray-700 tracking-tight">
             {t.client.name}, {t.client.position}
           </h4>
         </a>
