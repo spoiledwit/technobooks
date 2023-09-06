@@ -18,14 +18,14 @@
     >
       {#each Object.entries(nav) as e}
         <div class=" flex flex-col gap-2">
-          <p class=" text-gray-700 font-bold text-sm whitespace-nowrap">
+          <p class=" text-gray-700 font-bold text-base whitespace-nowrap">
             {toTitleCase(e[0])}
           </p>
           {#each e[1] as service}
             <a
               on:click={() => (open = false)}
               href={`/services/${service}`}
-              class=" text-sm text-gray-600 hover:text-black transition-all"
+              class=" text-base text-gray-600 hover:text-black transition-all"
             >
               {toTitleCase(service)}
             </a>

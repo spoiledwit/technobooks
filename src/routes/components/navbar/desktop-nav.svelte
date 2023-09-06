@@ -27,7 +27,9 @@
 <Card
   className=" hidden md:block py-2 w-[calc(100%-32px)] md:w-min md:mx-0 fixed top-4 left-1/2 z-[9999] -translate-x-1/2 px-8"
 >
-  <ul class=" flex w-full md:w-min justify-between md:gap-12 text-gray-700">
+  <ul
+    class=" flex text-lg w-full md:w-min justify-between md:gap-12 text-gray-700"
+  >
     <li class=" hover:text-primary-red transition-all cursor-pointer">
       <a href="/">Home</a>
     </li>
@@ -60,7 +62,7 @@
           currentDialog === 1 ? "text-primary-red" : ""
         } flex gap-1 items-center transition-all cursor-pointer`}
       >
-        <p>IT</p>
+        <p class="pl-2">IT</p>
         <div class={`${currentDialog === 1 ? " rotate-180" : ""} w-3`}>
           <MdKeyboardArrowDown />
         </div>

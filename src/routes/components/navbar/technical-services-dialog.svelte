@@ -18,13 +18,13 @@
     >
       {#each Object.entries(nav) as [path, name]}
         <div class=" flex flex-col gap-2">
-          <p class=" text-gray-700 font-bold text-sm whitespace-nowrap">
+          <p class=" text-gray-700 font-bold text-base whitespace-nowrap">
             {name}
           </p>
           <a
             on:click={() => (open = false)}
             href={`/services/${path}`}
-            class=" text-sm text-gray-600 hover:text-black transition-all"
+            class=" text-base text-gray-600 hover:text-black transition-all"
           >
             {name}
           </a>
