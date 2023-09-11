@@ -6,7 +6,7 @@
 
 <div class="bg-primary-red h-[30px] items-center w-full flex text-white md:px-28 px-3 justify-between">
     
-    <a href="mailto:info@tbcgulf.com" class="text-white hover:text-gray-100 md:text-medium text-xs transition duration-150" target="_blank">
+    <a href="mailto:info@tbcgulf.com" class="text-white hover:text-gray-100 text-xs md:text-[14px] transition duration-150" target="_blank">
         info@tbcgulf.com
     </a> 
     <div class="flex gap-2">
