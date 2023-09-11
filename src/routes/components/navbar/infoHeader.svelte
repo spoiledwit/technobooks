@@ -5,7 +5,7 @@
 </script>
 
 <div class="bg-primary-red h-[37px] items-center w-full flex text-white md:px-28 px-3 justify-between">
-  <a href="tel:+971521508056" class="text-white mr-10 ml-auto hover:text-gray-100 text-xs md:text-[16px] transition duration-150" target="_blank">
+  <a href="tel:+971521508056" class="text-white mr-10 md:ml-auto hover:text-gray-100 text-[16px] transition duration-150" target="_blank">
     +971 547802470
   </a> 
     <div class="flex gap-2">
