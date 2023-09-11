@@ -2,6 +2,7 @@
   import Card from "../card.svelte";
   import FinancialServicesDialog from "./financial-services-dialog.svelte";
 
+
   import MdKeyboardArrowDown from "svelte-icons/md/MdKeyboardArrowDown.svelte";
   import TechnicalServicesDialog from "./technical-services-dialog.svelte";
 
@@ -75,8 +76,6 @@
     <li class=" hover:text-primary-red transition-all cursor-pointer">
       <a href="/privacy-policy">Privacy</a>
     </li>
-    <li class=" hover:text-primary-red transition-all cursor-pointer">
-      <a href="/contact">Contact</a>
-    </li>
+
   </ul>
 </Card>
