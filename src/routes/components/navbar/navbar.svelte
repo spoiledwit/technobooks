@@ -13,8 +13,8 @@
     <h1
       class=" w-[272px] text-3xl text-primary-gray whitespace-nowrap font-bold tracking-tight"
     >
-      <img src={logo} alt="logo" class=" w-[90px] inline-block mr-2" />
-      <span class=" text-primary-red">Technobooks</span> Consultants
+      <img src={logo} alt="logo" class=" w-[120px] inline-block mr-2" />
+      <!-- <span class=" text-primary-red">Technobooks</span> Consultants -->
     </h1>
   </a>
 
