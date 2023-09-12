@@ -2,7 +2,7 @@
   import Accordion from "../accordion.svelte";
   import MdDragHandle from "svelte-icons/md/MdDragHandle.svelte";
   import MdClose from "svelte-icons/md/MdClose.svelte";
-  import logo from "../../../assets/logo2.png"
+  import logo from "../../../assets/logo2.png";
   import financeNav from "../../navs/financial-services.json";
   import techNav from "../../navs/technical-services.json";
   import { toTitleCase } from "$lib/utils";
@@ -29,13 +29,17 @@
 </script>
 
 <div class=" md:hidden w-min z-[60] flex justify-end">
-  <img src="{logo}" alt="Logo" class="mx-4 top-10 left-0 w-[70px] absolute my-2"/>
+  <img
+    src={logo}
+    alt="Logo"
+    class="mx-4 top-10 left-0 w-[70px] absolute my-2"
+  />
   {#if isMobileNavOpen}
     <div
       transition:fly={{ y: 32, duration: 120 }}
       class=" w-screen pt-20 px-4 h-screen bg-zinc-100 border-b border-gray-400 text-white fixed overflow-y-scroll top-0 left-0 gap-8"
     >
-      <ul class=" flex flex-col">
+      <ul class=" mt-6 flex flex-col">
         <li>
           <a
             on:click={closeDialog}
@@ -116,7 +120,7 @@
       </ul>
     </div>
   {/if}
-  <button on:click={toggleMobileNav} class="fixed right-4 top-16 p-1 w-9">
+  <button on:click={toggleMobileNav} class="fixed right-4 top-12 p-1 w-9">
     {#if isMobileNavOpen}
       <p class="text-primary-gray">
         <MdClose />
