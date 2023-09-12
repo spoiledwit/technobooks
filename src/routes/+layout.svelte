@@ -5,10 +5,12 @@
   import FaFacebook from "svelte-icons/fa/FaFacebook.svelte";
   import FaInstagram from "svelte-icons/fa/FaInstagram.svelte";
   import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
+  import InfoHeader from "./components/navbar/infoHeader.svelte";
 </script>
 
 <div class=" min-h-screen bg-zinc-100 h-full w-full">
   <div class="flex absolute right-10 top-10" />
+  <InfoHeader />
   <Navbar />
   <slot />
   <Footer />
@@ -20,18 +22,18 @@
     <a
       href="https://www.facebook.com/profile.php?id=61550876102941"
       target="_blank"
-      class=" w-5 aspect-square text-black"
+      class=" w-5 aspect-square text-gray-400 hover:text-gray-500 transition duration-150"
     >
       <FaFacebook />
     </a>
 
     <!-- Instagram -->
-    <a href="https://www.instagram.com" class=" w-5 aspect-square text-black">
+    <a href="https://www.instagram.com" class=" w-5 aspect-square text-gray-400 hover:text-gray-500 transition duration-150" target="_blank">
       <FaInstagram />
     </a>
 
     <!-- LinkedIn -->
-    <a href="https://www.linkedin.com" class=" w-5 aspect-square text-black">
+    <a href="https://www.linkedin.com" class=" w-5 aspect-square text-gray-400 hover:text-gray-500 transition duration-150" target="_blank">
       <FaLinkedin />
     </a>
   </div>
