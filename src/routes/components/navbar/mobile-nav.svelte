@@ -33,7 +33,7 @@
   {#if isMobileNavOpen}
     <div
       transition:fly={{ y: 32, duration: 120 }}
-      class=" w-screen pt-20 px-4 h-screen bg-zinc-100 border-b border-gray-400 text-white absolute overflow-y-scroll top-0 left-0 gap-8"
+      class=" w-screen pt-20 px-4 h-screen bg-zinc-100 border-b border-gray-400 text-white fixed overflow-y-scroll top-0 left-0 gap-8"
     >
       <ul class=" flex flex-col">
         <li>
